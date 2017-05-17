@@ -1,0 +1,167 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BJHL-Foundation-iOS (1.3.2):
+    - CocoaLumberjack (= 2.3.0)
+  - BJHL-Websocket-iOS (0.3.2):
+    - PocketSocket
+  - BJLiveCore (0.3.0-dylib):
+    - BJHL-Foundation-iOS
+    - BJHL-Websocket-iOS (>= 0.3.2)
+    - BJLiveCore/BJHLMediaPlayer (= 0.3.0-dylib)
+    - JRSwizzle
+    - libextobjc/EXTScope
+    - LKDBHelper
+    - LogStat
+    - LTInfiniteScrollView
+    - ReactiveCocoa (~> 2.0)
+    - SDWebImage
+    - YYModel
+  - BJLiveCore/BJHLMediaPlayer (0.3.0-dylib):
+    - BJHL-Foundation-iOS
+    - BJHL-Websocket-iOS (>= 0.3.2)
+    - JRSwizzle
+    - libextobjc/EXTScope
+    - LKDBHelper
+    - LogStat
+    - LTInfiniteScrollView
+    - ReactiveCocoa (~> 2.0)
+    - SDWebImage
+    - YYModel
+  - BJLiveUI (0.0.2):
+    - BJLiveCore (>= 0.3.0-dylib)
+    - libextobjc/EXTScope
+    - Masonry
+    - MBProgressHUD (~> 1.0)
+    - QBImagePickerController (~> 3.0)
+    - UITextView+Placeholder
+  - CocoaLumberjack (2.3.0):
+    - CocoaLumberjack/Default (= 2.3.0)
+    - CocoaLumberjack/Extensions (= 2.3.0)
+  - CocoaLumberjack/Core (2.3.0)
+  - CocoaLumberjack/Default (2.3.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.3.0):
+    - CocoaLumberjack/Default
+  - FLEX (2.4.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - JRSwizzle (1.0)
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - LKDBHelper (2.4.2):
+    - FMDB
+  - LogStat (0.6.0):
+    - AFNetworking
+    - LKDBHelper
+  - LTInfiniteScrollView (4.3.2)
+  - M9Dev (0.0.30):
+    - JRSwizzle
+    - libextobjc/EXTScope
+    - M9Dev/Libraries (= 0.0.30)
+    - M9Dev/M9Dev (= 0.0.30)
+    - Masonry
+    - NSString-UrlEncode
+    - Reachability
+  - M9Dev/Libraries (0.0.30):
+    - JRSwizzle
+    - libextobjc/EXTScope
+    - M9Dev/Libraries/BlocksKit (= 0.0.30)
+    - Masonry
+    - NSString-UrlEncode
+    - Reachability
+  - M9Dev/Libraries/BlocksKit (0.0.30):
+    - JRSwizzle
+    - libextobjc/EXTScope
+    - Masonry
+    - NSString-UrlEncode
+    - Reachability
+  - M9Dev/M9Dev (0.0.30):
+    - JRSwizzle
+    - libextobjc/EXTScope
+    - M9Dev/Libraries
+    - Masonry
+    - NSString-UrlEncode
+    - Reachability
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - NSString-UrlEncode (2.1.0)
+  - PocketSocket (1.0.1):
+    - PocketSocket/Client (= 1.0.1)
+    - PocketSocket/Core (= 1.0.1)
+    - PocketSocket/Server (= 1.0.1)
+  - PocketSocket/Client (1.0.1):
+    - PocketSocket/Core
+  - PocketSocket/Core (1.0.1)
+  - PocketSocket/Server (1.0.1):
+    - PocketSocket/Client
+  - QBImagePickerController (3.4.0)
+  - Reachability (3.2)
+  - ReactiveCocoa (2.5):
+    - ReactiveCocoa/UI (= 2.5)
+  - ReactiveCocoa/Core (2.5):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.5)
+  - ReactiveCocoa/UI (2.5):
+    - ReactiveCocoa/Core
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - UITextView+Placeholder (1.2.0)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - BJLiveCore (>= 0.3.0-dylib)
+  - BJLiveUI (from `../`)
+  - FLEX (~> 2.0)
+  - M9Dev
+  - Masonry
+
+EXTERNAL SOURCES:
+  BJLiveUI:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BJHL-Foundation-iOS: 2dc339ded83d6c1fae1ce51f7ffcb315b19f8db2
+  BJHL-Websocket-iOS: d268c2d08cb22d461a0b961781566e488c004c1d
+  BJLiveCore: 04c7824df7f54c3dce927b75111c7e156a06791b
+  BJLiveUI: d412d1050b95a658b3200370cedd45a7a3f64f3a
+  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  LKDBHelper: ab67373b32f47463bf5f838d730f225824f4492a
+  LogStat: b3af561bbe5691bdd8df624a3e570419e5b30f9f
+  LTInfiniteScrollView: 6ce2fcaf6d030a9e45a164ba9dcdb1b325a30d03
+  M9Dev: 56d9ab1b80a96ae08325c168a9c4023674922993
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  NSString-UrlEncode: 92dcb01cac33ef036cda76baf0e4378b18779e47
+  PocketSocket: 9c6867d66fb4f962af96b9b07f4b45bb561b2c2a
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  UITextView+Placeholder: 77680995fcdd07c3f52ec92fe1150874a2ac89ff
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: d912ca76c0593bd68a755620adbffb181099dd25
+
+COCOAPODS: 1.2.1
