@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/baijia/BJLiveUI-iOS.git", :tag => "#{s.version}" }
   s.ios.preserve_paths       = 'BJLiveUI.framework'
   s.ios.public_header_files  = 'BJLiveUI.framework/Versions/A/Headers/**/*.h'
+  s.ios.source_files         = 'BJLiveUI.framework/Versions/A/Headers/**/*.h'
   s.ios.resource             = 'BJLiveUI.framework/Versions/A/Resources/**/*'
   s.ios.vendored_frameworks  = 'BJLiveUI.framework'
   s.frameworks = ['CoreGraphics', 'Foundation', 'UIKit']
