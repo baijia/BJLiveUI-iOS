@@ -41,7 +41,7 @@ PODS:
     - ReactiveCocoa (~> 2.0)
     - SDWebImage
     - YYModel
-  - BJLiveUI (0.0.2):
+  - BJLiveUI (0.0.2-dylib):
     - BJLiveCore (>= 0.3.0-dylib)
     - libextobjc/EXTScope
     - Masonry
@@ -126,22 +126,17 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - BJLiveCore (>= 0.3.0-dylib)
-  - BJLiveUI (from `../`)
+  - BJLiveUI (>= 0.0.2-dylib)
   - FLEX (~> 2.0)
   - M9Dev
   - Masonry
-
-EXTERNAL SOURCES:
-  BJLiveUI:
-    :path: "../"
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BJHL-Foundation-iOS: 2dc339ded83d6c1fae1ce51f7ffcb315b19f8db2
   BJHL-Websocket-iOS: d268c2d08cb22d461a0b961781566e488c004c1d
   BJLiveCore: 04c7824df7f54c3dce927b75111c7e156a06791b
-  BJLiveUI: d412d1050b95a658b3200370cedd45a7a3f64f3a
+  BJLiveUI: 18c50f66ca119f66ae591a59999f1abd6c3a5c9f
   CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
@@ -162,6 +157,6 @@ SPEC CHECKSUMS:
   UITextView+Placeholder: 77680995fcdd07c3f52ec92fe1150874a2ac89ff
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: d912ca76c0593bd68a755620adbffb181099dd25
+PODFILE CHECKSUM: 7f6b2062a33957b5f8a39d302738ac5b24ccc98a
 
 COCOAPODS: 1.2.1
