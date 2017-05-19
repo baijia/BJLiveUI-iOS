@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "BJLiveUI"
-  s.version = "0.0.2-dylib"
+  s.version = "0.0.3-dylib"
   s.summary = "BJLiveUI SDK."
   s.description = 'BJLiveUI SDK for iOS.'
   s.license = 'MIT'
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES" }
 
-  s.dependency 'BJLiveCore', '>= 0.3.0-dylib'
+  s.dependency 'BJLiveCore', '~> 0.3.0-dylib'
   s.dependency "libextobjc/EXTScope"
   s.dependency 'Masonry'
   s.dependency 'MBProgressHUD', '~> 1.0'

@@ -69,7 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark - observing
 
-@interface BJLRoomViewController (observing)
+@interface BJLRoomViewController (BJLObservable)
 
 - (BJLObservable)roomViewControllerEnterRoomSuccess:(BJLRoomViewController *)roomViewController;
 - (BJLObservable)roomViewController:(BJLRoomViewController *)roomViewController
