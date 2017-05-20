@@ -22,9 +22,9 @@ target 'BJLiveUI' do
     # use_frameworks!
     
     # dev
-    # pod 'BJLiveCore', '>= 0.3.0-dylib'
-    pod 'BJLiveUI', :path => '../'
-    # pod 'BJLiveUI', '>= 0.0.2-dylib'
+    # pod 'BJLiveCore', '>= 0.3.0-dylib02'
+    # pod 'BJLiveUI', :path => '../'
+    pod 'BJLiveUI', '0.0.4-dylib'
     
     # demo
     pod 'Masonry'
