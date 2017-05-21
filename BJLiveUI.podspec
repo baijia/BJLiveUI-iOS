@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "BJLiveUI"
-  s.version = "0.0.4-dylib"
+  s.version = "0.0.5-dylib"
   s.summary = "BJLiveUI SDK."
   s.description = 'BJLiveUI SDK for iOS.'
   s.license = 'MIT'
