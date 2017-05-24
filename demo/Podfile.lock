@@ -14,14 +14,13 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - BJHL-Foundation-iOS (1.3.2):
-    - CocoaLumberjack (= 2.3.0)
+  - BJHL-Foundation-iOS (1.2.12)
   - BJHL-Websocket-iOS (0.3.2):
     - PocketSocket
-  - BJLiveCore (0.3.0-dylib02):
+  - BJLiveCore (0.3.0-dylib04):
     - BJHL-Foundation-iOS
     - BJHL-Websocket-iOS (>= 0.3.2)
-    - BJLiveCore/BJHLMediaPlayer (= 0.3.0-dylib02)
+    - BJLiveCore/BJHLMediaPlayer (= 0.3.0-dylib04)
     - JRSwizzle
     - libextobjc/EXTScope
     - LKDBHelper
@@ -30,7 +29,7 @@ PODS:
     - ReactiveCocoa (~> 2.0)
     - SDWebImage
     - YYModel
-  - BJLiveCore/BJHLMediaPlayer (0.3.0-dylib02):
+  - BJLiveCore/BJHLMediaPlayer (0.3.0-dylib04):
     - BJHL-Foundation-iOS
     - BJHL-Websocket-iOS (>= 0.3.2)
     - JRSwizzle
@@ -41,21 +40,13 @@ PODS:
     - ReactiveCocoa (~> 2.0)
     - SDWebImage
     - YYModel
-  - BJLiveUI (0.0.4-dylib):
+  - BJLiveUI (0.0.6):
     - BJLiveCore (~> 0.3.0-dylib)
     - libextobjc/EXTScope
     - Masonry
     - MBProgressHUD (~> 1.0)
     - QBImagePickerController (~> 3.0)
     - UITextView+Placeholder
-  - CocoaLumberjack (2.3.0):
-    - CocoaLumberjack/Default (= 2.3.0)
-    - CocoaLumberjack/Extensions (= 2.3.0)
-  - CocoaLumberjack/Core (2.3.0)
-  - CocoaLumberjack/Default (2.3.0):
-    - CocoaLumberjack/Core
-  - CocoaLumberjack/Extensions (2.3.0):
-    - CocoaLumberjack/Default
   - FLEX (2.4.0)
   - FMDB (2.6.2):
     - FMDB/standard (= 2.6.2)
@@ -126,18 +117,17 @@ PODS:
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - BJLiveUI (= 0.0.4-dylib)
+  - BJLiveUI (~> 0.0.6)
   - FLEX (~> 2.0)
   - M9Dev
   - Masonry
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  BJHL-Foundation-iOS: 2dc339ded83d6c1fae1ce51f7ffcb315b19f8db2
+  BJHL-Foundation-iOS: c8d795787524a8f27edb4694dd78794bc2fca450
   BJHL-Websocket-iOS: d268c2d08cb22d461a0b961781566e488c004c1d
-  BJLiveCore: 8b4f776e207d5a77c37e29122caf3f7252af70c2
-  BJLiveUI: cb6194bf2fa399b6325112cf9d125ef67cde7394
-  CocoaLumberjack: 97fab7ee5f507fe54445cca7ea80f926729cfd15
+  BJLiveCore: 9c8cf353c9669e8e9d1149b93c5c4806008efe9a
+  BJLiveUI: 1e6d8a3db244647121fa15c85efbb8ae48743b8f
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
@@ -157,6 +147,6 @@ SPEC CHECKSUMS:
   UITextView+Placeholder: 77680995fcdd07c3f52ec92fe1150874a2ac89ff
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: b6798104b72c4b688545e64e6fd0b0d6077feef2
+PODFILE CHECKSUM: 158f4aa3210c3ba208e5c30e1eae216f681105c5
 
 COCOAPODS: 1.2.1
