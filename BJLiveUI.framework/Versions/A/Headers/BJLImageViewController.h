@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly) UIImageView *imageView;
 
-@property (nonatomic, copy, nullable) void (^saveCallback)(NSString *message);
 @property (nonatomic, copy, nullable) void (^hideCallback)(id _Nullable sender);
 
 - (void)hide;

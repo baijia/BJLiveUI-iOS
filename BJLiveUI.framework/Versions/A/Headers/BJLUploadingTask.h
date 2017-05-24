@@ -24,6 +24,7 @@ typedef NS_ENUM(NSInteger, BJLUploadState) {
 
 @property (nonatomic, readonly) ICLImageFile *imageFile;
 @property (nonatomic, readonly, nullable) UIImage *thumbnail;
+@property (nonatomic, readonly) CGSize imageSize;
 
 @property (nonatomic, readonly) BJLUploadState state;
 @property (nonatomic, readonly) CGFloat progress; // 主线程更新，不会过于频繁

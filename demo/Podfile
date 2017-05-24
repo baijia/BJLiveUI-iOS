@@ -24,7 +24,7 @@ target 'BJLiveUI' do
     # dev
     # pod 'BJLiveCore', '>= 0.3.0-dylib02'
     # pod 'BJLiveUI', :path => '../'
-    pod 'BJLiveUI', '0.0.4-dylib'
+    pod 'BJLiveUI', '0.0.5-dylib'
     
     # demo
     pod 'Masonry'
