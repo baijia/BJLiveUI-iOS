@@ -23,9 +23,11 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES" }
 
   s.dependency 'BJLiveCore', '~> 0.3.0-dylib'
-  s.dependency "libextobjc/EXTScope"
   s.dependency 'Masonry'
   s.dependency 'MBProgressHUD', '~> 1.0'
   s.dependency 'QBImagePickerController', '~> 3.0'
+
+  # DEPRECATED
+  s.dependency "libextobjc/EXTScope"
 
 end
