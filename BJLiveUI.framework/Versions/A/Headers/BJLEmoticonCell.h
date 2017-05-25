@@ -1,0 +1,21 @@
+//
+//  BJLEmoticonCell.h
+//  BJLiveUI
+//
+//  Created by MingLQ on 2017-04-18.
+//  Copyright © 2017 Baijia Cloud. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+#import "BJLEmoticon.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface BJLEmoticonCell : UICollectionViewCell
+
+- (void)updateWithEmoticon:(BJLEmoticon *)emoticon;
+
+@end
+
+NS_ASSUME_NONNULL_END
