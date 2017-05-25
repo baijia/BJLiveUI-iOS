@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <BJLiveCore/BJLiveCore.h>
-#import "QBImagePickerController+iCloudLoading.h"
+#import "BJL_iCloudLoading.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
