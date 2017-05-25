@@ -14,7 +14,6 @@
 #import "BJLChatViewController.h"
 #import "BJLContentView.h"
 #import "BJLControlsViewController.h"
-#import "BJLEmoticon.h"
 #import "BJLHitTestView.h"
 #import "BJLImageViewController.h"
 #import "BJLLoadingViewController.h"
