@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "BJLEmoticon.h"
+#import <BJLiveCore/BJLEmoticon.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
