@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.ios.source_files         = 'BJLiveUI.framework/Versions/A/Headers/**/*.h'
   s.ios.resource             = 'BJLiveUI.framework/Versions/A/Resources/**/*'
   s.ios.vendored_frameworks  = 'BJLiveUI.framework'
-  s.frameworks = ['CoreGraphics', 'Foundation', 'MobileCoreServices', 'Photos', 'UIKit']
+  s.frameworks = ['CoreGraphics', 'Foundation', 'MobileCoreServices', 'Photos', 'UIKit', 'WebKit']
 
   s.requires_arc = true
   # s.xcconfig = {"ENABLE_BITCODE" => "NO"}
