@@ -23,15 +23,15 @@ NS_ASSUME_NONNULL_BEGIN
     UITableView *_tableView;
 }
 
+@property (nonatomic, readonly) UITableViewStyle tableViewStyle; // UITableViewStylePlain by default
+@property (nonatomic, readonly) UITableView *tableView;
+@property (nonatomic) BOOL clearsSelectionOnViewWillAppear;
+
+@property (nonatomic, nullable) UIRefreshControl *refreshControl;
+
 - (instancetype)initWithStyle:(UITableViewStyle)style NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil NS_UNAVAILABLE;
 - (instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;
-
-@property(nonatomic, readonly) UITableViewStyle tableViewStyle; // UITableViewStylePlain by default
-@property(nonatomic, readonly) UITableView *tableView;
-@property(nonatomic) BOOL clearsSelectionOnViewWillAppear;
-
-@property (nonatomic, nullable) UIRefreshControl *refreshControl;
 
 @end
 

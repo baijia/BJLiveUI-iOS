@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
     UIScrollView *_scrollView;
 }
 
-@property(nonatomic, readonly) UIScrollView *scrollView;
+@property (nonatomic, readonly) UIScrollView *scrollView;
 
 @property (nonatomic, nullable) UIRefreshControl *refreshControl;
 

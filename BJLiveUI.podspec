@@ -10,17 +10,17 @@ Pod::Spec.new do |s|
   s.platform = :ios, "8.0"
 
   # git
-  s.source = { :git => "https://github.com/baijia/BJLiveUI-iOS.git", :tag => "#{s.version}" }
+  s.source = {:git => "https://github.com/baijia/BJLiveUI-iOS.git", :tag => "#{s.version}"}
   s.ios.preserve_paths       = 'BJLiveUI.framework'
   s.ios.public_header_files  = 'BJLiveUI.framework/Versions/A/Headers/**/*.h'
   s.ios.source_files         = 'BJLiveUI.framework/Versions/A/Headers/**/*.h'
   s.ios.resource             = 'BJLiveUI.framework/Versions/A/Resources/**/*'
   s.ios.vendored_frameworks  = 'BJLiveUI.framework'
-  s.frameworks = ['CoreGraphics', 'Foundation', 'UIKit']
+  s.frameworks = ['CoreGraphics', 'Foundation', 'MobileCoreServices', 'Photos', 'UIKit']
 
   s.requires_arc = true
-  s.xcconfig = { "ENABLE_BITCODE" => "NO" }
-  # s.xcconfig = { "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES" }
+  # s.xcconfig = {"ENABLE_BITCODE" => "NO"}
+  s.xcconfig = {"ENABLE_BITCODE" => "NO", "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES"}
 
   s.dependency 'BJLiveCore', '~> 0.3.0-dylib'
   s.dependency 'Masonry'
