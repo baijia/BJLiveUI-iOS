@@ -6,9 +6,9 @@
 //  Copyright © 2016年 Baijia Cloud. All rights reserved.
 //
 
-#import <M9Dev/M9Dev.h>
-
 #import "BJRootViewController.h"
+
+#import "UIViewController+BJUtil.h"
 
 @interface BJRootViewController ()
 
@@ -33,7 +33,7 @@
     [self addChildViewController:viewController superview:self.view];
     self.activeViewController = viewController;
     [self setNeedsStatusBarAppearanceUpdate];
-    [UIViewController attemptRotationToDeviceOrientation];
+    [UIViewController attemptRotationToDeviceOrientation]; // @see shouldAutorotate
     if (completion) completion(YES);
     
     /* 切换动画

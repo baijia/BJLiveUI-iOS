@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  BJLiveUI
+//  BJLiveCore
 //
-//  Created by MingLQ on 2017-01-16.
-//  Copyright © 2017 Baijia Cloud. All rights reserved.
+//  Created by MingLQ on 2016-12-17.
+//  Copyright © 2016 Baijia Cloud. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

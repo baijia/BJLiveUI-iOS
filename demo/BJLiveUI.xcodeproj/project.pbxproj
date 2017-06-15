@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3FF018ED6E9FB80EF633F6AA /* libPods-BJLiveUIUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EE10980C00E356CB1221BC3 /* libPods-BJLiveUIUITests.a */; };
-		4307617D33E2452F28227A29 /* libPods-BJLiveUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 74FB91C5A36D37B34B97F9EA /* libPods-BJLiveUITests.a */; };
-		8981E1F9040829A2651D0FA7 /* libPods-BJLiveUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5156179DAD9759098850F9F7 /* libPods-BJLiveUI.a */; };
+		2FF8312A07C8C04F4E95D43A /* libPods-BJLiveUI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B704BE9000BEC34B9D8D432 /* libPods-BJLiveUI.a */; };
+		64A2E3D9B765A0133F810CB8 /* libPods-BJLiveUIUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCEE3ECEA85B7D83E402C922 /* libPods-BJLiveUIUITests.a */; };
+		801C67FC10BEFD34B2727E68 /* libPods-BJLiveUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C06779BF583664602E2C7A /* libPods-BJLiveUITests.a */; };
 		DF97FD0B1E2CCBEB00A1BF8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF97FD0A1E2CCBEB00A1BF8F /* main.m */; };
 		DF97FD0E1E2CCBEB00A1BF8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DF97FD0D1E2CCBEB00A1BF8F /* AppDelegate.m */; };
 		DF97FD161E2CCBEB00A1BF8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF97FD151E2CCBEB00A1BF8F /* Assets.xcassets */; };
@@ -44,14 +44,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06C06779BF583664602E2C7A /* libPods-BJLiveUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33EE4EE0EBBED36DC889BF9A /* Pods-BJLiveUIUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUIUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUIUITests/Pods-BJLiveUIUITests.release.xcconfig"; sourceTree = "<group>"; };
 		47AB3619F4CC369C2C2323A3 /* Pods-BJLiveUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUI/Pods-BJLiveUI.debug.xcconfig"; sourceTree = "<group>"; };
-		5156179DAD9759098850F9F7 /* libPods-BJLiveUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EE10980C00E356CB1221BC3 /* libPods-BJLiveUIUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUIUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		65673B29693F77EEE8699FCD /* Pods-BJLiveUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUI.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUI/Pods-BJLiveUI.release.xcconfig"; sourceTree = "<group>"; };
 		7414E955482C29C2C388394A /* Pods-BJLiveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUITests/Pods-BJLiveUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		74FB91C5A36D37B34B97F9EA /* libPods-BJLiveUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B704BE9000BEC34B9D8D432 /* libPods-BJLiveUI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97EB048424C0B8DFCE932D00 /* Pods-BJLiveUIUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUIUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUIUITests/Pods-BJLiveUIUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BCEE3ECEA85B7D83E402C922 /* libPods-BJLiveUIUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUIUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF97FD061E2CCBEB00A1BF8F /* BJLiveUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJLiveUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF97FD0A1E2CCBEB00A1BF8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DF97FD0C1E2CCBEB00A1BF8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8981E1F9040829A2651D0FA7 /* libPods-BJLiveUI.a in Frameworks */,
+				2FF8312A07C8C04F4E95D43A /* libPods-BJLiveUI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4307617D33E2452F28227A29 /* libPods-BJLiveUITests.a in Frameworks */,
+				801C67FC10BEFD34B2727E68 /* libPods-BJLiveUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FF018ED6E9FB80EF633F6AA /* libPods-BJLiveUIUITests.a in Frameworks */,
+				64A2E3D9B765A0133F810CB8 /* libPods-BJLiveUIUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,9 +117,9 @@
 		796D8CE72429C2D90C1E83EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5156179DAD9759098850F9F7 /* libPods-BJLiveUI.a */,
-				74FB91C5A36D37B34B97F9EA /* libPods-BJLiveUITests.a */,
-				5EE10980C00E356CB1221BC3 /* libPods-BJLiveUIUITests.a */,
+				8B704BE9000BEC34B9D8D432 /* libPods-BJLiveUI.a */,
+				06C06779BF583664602E2C7A /* libPods-BJLiveUITests.a */,
+				BCEE3ECEA85B7D83E402C922 /* libPods-BJLiveUIUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

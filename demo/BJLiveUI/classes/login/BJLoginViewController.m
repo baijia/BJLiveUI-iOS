@@ -6,13 +6,12 @@
 //  Copyright © 2016年 Baijiahulian. All rights reserved.
 //
 
-// #import <M9Dev/M9Dev.h>
-
 #import "BJLoginViewController.h"
 #import "BJLoginView.h"
 
 #import "BJViewControllerImports.h"
 
+#import <BJLiveCore/BJLRoom+internal.h>
 #import <BJLiveUI/BJLiveUI.h>
 
 // !!!: GSX
@@ -148,6 +147,17 @@ static NSString * const BJLoginNameKey = @"BJLoginName";
 
 - (void)enterRoomWithJoinCode:(NSString *)joinCode userName:(NSString *)userName {
     [self storeCodeAndName];
+    
+    BJLRoom.deployType = [BJAppConfig sharedInstance].deployType; // !!!: internal
+    
+//    BJLRoomViewController *roomViewController = [BJLRoomViewController
+//                                                 instanceWithID:@"170314xxxxxxxx"
+//                                                 apiSign:@"b8a5eddbxxxxxxxxxxxxxxxxxxxxe5a8"
+//                                                 user:[BJLUser
+//                                                       userWithNumber:@"100000000"
+//                                                       name:@"mlq"
+//                                                       avatar:@"https://xxxx.png"
+//                                                       role:BJLUserRole_student]];
     
     BJLRoomViewController *roomViewController = [BJLRoomViewController
                                                  instanceWithSecret:joinCode

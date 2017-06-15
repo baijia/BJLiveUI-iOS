@@ -3,11 +3,11 @@
 //  LivePlayerApp
 //
 //  Created by MingLQ on 2016-08-19.
-//  Copyright © 2016年 GSX. All rights reserved.
+//  Copyright © 2016年 Baijia Cloud. All rights reserved.
 //
 
-#import <BJHL-Foundation-iOS/BJHL-Foundation-iOS.h>
-#import <M9Dev/M9Dev.h>
+#import <BJLiveCore/BJLiveCore.h>
+#import <libextobjc/EXTScope.h>
 
 #if DEBUG
 #import <FLEX/FLEXManager.h>
@@ -16,6 +16,7 @@
 #import "AppDelegate+ui.h"
 
 #import "BJAppearance.h"
+#import "UIViewController+BJUtil.h"
 #import "UIWindow+motion.h"
 
 #import "BJRootViewController.h"
@@ -33,29 +34,30 @@
 }
 
 - (void)setupViewControllers {
-    [self showViewControllerOfClass:[BJLoginViewController class]];
+    [self showViewController];
 }
 
-- (void)showViewControllerOfClass:(Class)viewControllerClass {
+- (void)showViewController {
+    Class viewControllerClass = [BJLoginViewController class];
+    
     BJRootViewController *rootViewController = [BJRootViewController sharedInstance];
     
     UIViewController *activeViewController = rootViewController.activeViewController;
     if ([activeViewController isKindOfClass:[UINavigationController class]]) {
         UINavigationController *navigationController = (UINavigationController *)activeViewController;
-        activeViewController = navigationController.rootViewController;
-    }
-    if ([activeViewController isKindOfClass:viewControllerClass]) {
-        return;
+        activeViewController = navigationController.viewControllers.firstObject;
     }
     
-    UIViewController *viewController = [[viewControllerClass new] wrapWithNavigationController];
-    if (rootViewController.presentedViewController) {
-        [rootViewController dismissAllViewControllersAnimated:NO completion:^{
+    if (![activeViewController isKindOfClass:viewControllerClass]) {
+        UIViewController *viewController = [[UINavigationController alloc] initWithRootViewController:[viewControllerClass new]];
+        if (rootViewController.presentedViewController) {
+            [rootViewController dismissViewControllerAnimated:NO completion:^{
+                [rootViewController switchViewController:viewController completion:nil];
+            }];
+        }
+        else {
             [rootViewController switchViewController:viewController completion:nil];
-        }];
-    }
-    else {
-        [rootViewController switchViewController:viewController completion:nil];
+        }
     }
 }
 
@@ -72,7 +74,7 @@
 }
 
 - (void)didShakeWithNotification:(NSNotification *)notification {
-    UIEventSubtypeMotionShakeState shakeState = [notification.userInfo integerForKey:UIEventSubtypeMotionShakeStateKey];
+    UIEventSubtypeMotionShakeState shakeState = [notification.userInfo bjl_integerForKey:UIEventSubtypeMotionShakeStateKey];
     if (shakeState == UIEventSubtypeMotionShakeStateEnded) {
         [self showDeveloperTools];
     }
@@ -81,38 +83,37 @@
 - (void)showDeveloperTools {
     @weakify(self);
     
-    M9AlertController *alertController = [M9AlertController
+    UIAlertController *alertController = [UIAlertController
                                           alertControllerWithTitle:@"Developer Tools"
                                           message:nil
-                                          preferredStyle:M9AlertControllerStyleActionSheet];
+                                          preferredStyle:UIAlertControllerStyleActionSheet];
     
-    [alertController addActionWithTitle:@"FLEX"
-                                  style:M9AlertActionStyleDefault
-                                handler:^(id<M9AlertAction> action)
-     {
-         // @strongify(self);
-         [[FLEXManager sharedManager] showExplorer];
-     }];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"FLEX"
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction *action)
+                                {
+                                    // @strongify(self);
+                                    [[FLEXManager sharedManager] showExplorer];
+                                }]];
     
-    [alertController addActionWithTitle:@"切换环境"
-                                  style:M9AlertActionStyleDefault
-                                handler:^(id<M9AlertAction> action)
-     {
-         @strongify(self);
-         [self askToSwitchDeployType];
-     }];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"切换环境"
+                                                        style:UIAlertActionStyleDefault
+                                                      handler:^(UIAlertAction *action)
+                                {
+                                    @strongify(self);
+                                    [self askToSwitchDeployType];
+                                }]];
     
-    [alertController addActionWithTitle:@"取消"
-                                  style:M9AlertActionStyleCancel
-                                handler:^(id<M9AlertAction> action)
-     {
-         // @strongify(self);
-     }];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"取消"
+                                                        style:UIAlertActionStyleCancel
+                                                      handler:^(UIAlertAction *action)
+                                {
+                                    // @strongify(self);
+                                }]];
     
-    [alertController asUIAlertController].popoverPresentationController.sourceView = self.window;
-    [alertController presentFromViewController:[UIViewController topViewController]
-                                      animated:YES
-                                    completion:nil];
+    [[UIViewController topViewController] presentViewController:alertController
+                                                       animated:YES
+                                                     completion:nil];
 }
 
 - (void)askToSwitchDeployType {
@@ -124,35 +125,34 @@
                        [self nameOfDeployType:currentDeployType]];
     NSString *message = @"注意：切换环境需要重启应用！";
     
-    M9AlertController *alertController = [M9AlertController
+    UIAlertController *alertController = [UIAlertController
                                           alertControllerWithTitle:title
                                           message:message
-                                          preferredStyle:M9AlertControllerStyleActionSheet];
+                                          preferredStyle:UIAlertControllerStyleActionSheet];
     
     for (BJLDeployType deployType = 0; deployType < _BJLDeployType_count; deployType++) {
         if (deployType == currentDeployType) {
             continue;
         }
-        [alertController addActionWithTitle:[self nameOfDeployType:deployType]
-                                      style:M9AlertActionStyleDestructive
-                                    handler:^(id<M9AlertAction> action)
-         {
-             // @strongify(self);
-             [BJAppConfig sharedInstance].deployType = deployType;
-         }];
+        [alertController addAction:[UIAlertAction actionWithTitle:[self nameOfDeployType:deployType]
+                                                            style:UIAlertActionStyleDestructive
+                                                          handler:^(UIAlertAction *action)
+                                    {
+                                        // @strongify(self);
+                                        [BJAppConfig sharedInstance].deployType = deployType;
+                                    }]];
     }
     
-    [alertController addActionWithTitle:@"取消"
-                                  style:M9AlertActionStyleCancel
-                                handler:^(id<M9AlertAction> action)
-     {
-         // @strongify(self);
-     }];
+    [alertController addAction:[UIAlertAction actionWithTitle:@"取消"
+                                                        style:UIAlertActionStyleCancel
+                                                      handler:^(UIAlertAction *action)
+                                {
+                                    // @strongify(self);
+                                }]];
     
-    [alertController asUIAlertController].popoverPresentationController.sourceView = self.window;
-    [alertController presentFromViewController:[UIViewController topViewController]
-                                      animated:YES
-                                    completion:nil];
+    [[UIViewController topViewController] presentViewController:alertController
+                                                       animated:YES
+                                                     completion:nil];
 }
 
 - (NSString *)nameOfDeployType:(BJLDeployType)deployType {
@@ -164,7 +164,7 @@
         case BJLDeployType_www:
             return @"www";
         default:
-            return NSStringFromValue(deployType, nil);
+            return [@(deployType) description];
     }
 }
 
