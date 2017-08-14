@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   # s.xcconfig = {"ENABLE_BITCODE" => "NO"}
   s.xcconfig = {"ENABLE_BITCODE" => "NO", "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES"}
 
-  s.dependency 'BJLiveCore', '~> 0.3.0-dylib'
+  s.dependency 'BJLiveCore', '~> 0.4.0'
   s.dependency 'Masonry'
   s.dependency 'MBProgressHUD', '~> 1.0'
   s.dependency 'QBImagePickerController', '~> 3.0'
