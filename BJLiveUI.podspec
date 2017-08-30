@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
   # s.xcconfig = {"ENABLE_BITCODE" => "NO"}
-  s.xcconfig = {"ENABLE_BITCODE" => "NO", "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES"}
+  s.xcconfig = {"CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES", "ENABLE_BITCODE" => "NO", "GCC_PREPROCESSOR_DEFINITIONS" => "$(inherited) PODSPEC_NAME=#{s.name} PODSPEC_VERSION=#{s.version}"}
 
   s.dependency 'BJLiveCore', '~> 0.4.0'
   s.dependency 'Masonry'
