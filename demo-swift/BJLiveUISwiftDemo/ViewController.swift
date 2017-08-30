@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let button = UIButton.init();
+        button.setTitle("", for: .normal);
+        
+        let room: BJLRoom = BJLRoom.room(withSecret: "", userName: "", userAvatar: "") as! BJLRoom;
+        room.enterSuccess();
+        
         let roomVC = BJRoomViewController()
         self.bjl_addChildViewController(roomVC, superview: self.view)
     }

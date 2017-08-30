@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B7B018CF5E05D920D2FA5F2 /* Pods_BJLiveUISwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0739A9F8FFAB777138003AF9 /* Pods_BJLiveUISwiftDemoTests.framework */; };
-		3C09F67C9C296A3E4B015255 /* Pods_BJLiveUISwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 485FA5049A454B3E828E1403 /* Pods_BJLiveUISwiftDemo.framework */; };
-		A0EF8FB539E7DD1544951F2A /* Pods_BJLiveUISwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D68AD06152ED2CE6F1E9A77 /* Pods_BJLiveUISwiftDemoUITests.framework */; };
+		6E71EE31E06AB76CFCD88B33 /* Pods_BJLiveUISwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636597E14EC1B62766BF57D0 /* Pods_BJLiveUISwiftDemo.framework */; };
+		C97D139782C0DA0358827EB4 /* Pods_BJLiveUISwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FF6C08C2474BF4BE02CD5A3 /* Pods_BJLiveUISwiftDemoTests.framework */; };
 		DFD129AA1EF2960600A74BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD129A91EF2960600A74BBF /* AppDelegate.swift */; };
 		DFD129AC1EF2960600A74BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD129AB1EF2960600A74BBF /* ViewController.swift */; };
 		DFD129AF1EF2960600A74BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD129AD1EF2960600A74BBF /* Main.storyboard */; };
@@ -18,6 +17,7 @@
 		DFD129BF1EF2960600A74BBF /* BJLiveUISwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD129BE1EF2960600A74BBF /* BJLiveUISwiftDemoTests.swift */; };
 		DFD129CA1EF2960600A74BBF /* BJLiveUISwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD129C91EF2960600A74BBF /* BJLiveUISwiftDemoUITests.swift */; };
 		DFD129DB1EF296F300A74BBF /* BJRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFD129D91EF296F300A74BBF /* BJRoomViewController.m */; };
+		E9C619AA1C7CCE662B44008C /* Pods_BJLiveUISwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD422E9FF40E7D9D2C4654EE /* Pods_BJLiveUISwiftDemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,13 +39,12 @@
 
 /* Begin PBXFileReference section */
 		06089DC4591CC9BE7AF71C8B /* Pods-BJLiveUISwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoUITests/Pods-BJLiveUISwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0739A9F8FFAB777138003AF9 /* Pods_BJLiveUISwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8DD37979D2911DC7ED5556 /* Pods-BJLiveUISwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoTests/Pods-BJLiveUISwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1EA7193C5B9E1A63D7D99B11 /* Pods-BJLiveUISwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemo/Pods-BJLiveUISwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2FEF9CB46D6278315D767630 /* Pods-BJLiveUISwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemo/Pods-BJLiveUISwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		3D68AD06152ED2CE6F1E9A77 /* Pods_BJLiveUISwiftDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		485FA5049A454B3E828E1403 /* Pods_BJLiveUISwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		636597E14EC1B62766BF57D0 /* Pods_BJLiveUISwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		950776ABC767BC635CC2B6DC /* Pods-BJLiveUISwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoTests/Pods-BJLiveUISwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		9FF6C08C2474BF4BE02CD5A3 /* Pods_BJLiveUISwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD41A7F2882F69CA20151F20 /* Pods-BJLiveUISwiftDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoUITests/Pods-BJLiveUISwiftDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DFD129A61EF2960600A74BBF /* BJLiveUISwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJLiveUISwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD129A91EF2960600A74BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		DFD129D71EF296F200A74BBF /* BJLiveUISwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BJLiveUISwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		DFD129D81EF296F300A74BBF /* BJRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BJRoomViewController.h; sourceTree = "<group>"; };
 		DFD129D91EF296F300A74BBF /* BJRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BJRoomViewController.m; sourceTree = "<group>"; };
+		FD422E9FF40E7D9D2C4654EE /* Pods_BJLiveUISwiftDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C09F67C9C296A3E4B015255 /* Pods_BJLiveUISwiftDemo.framework in Frameworks */,
+				6E71EE31E06AB76CFCD88B33 /* Pods_BJLiveUISwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B7B018CF5E05D920D2FA5F2 /* Pods_BJLiveUISwiftDemoTests.framework in Frameworks */,
+				C97D139782C0DA0358827EB4 /* Pods_BJLiveUISwiftDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0EF8FB539E7DD1544951F2A /* Pods_BJLiveUISwiftDemoUITests.framework in Frameworks */,
+				E9C619AA1C7CCE662B44008C /* Pods_BJLiveUISwiftDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,9 +96,9 @@
 		0E0DFCC081576FC8F52F5434 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				485FA5049A454B3E828E1403 /* Pods_BJLiveUISwiftDemo.framework */,
-				0739A9F8FFAB777138003AF9 /* Pods_BJLiveUISwiftDemoTests.framework */,
-				3D68AD06152ED2CE6F1E9A77 /* Pods_BJLiveUISwiftDemoUITests.framework */,
+				636597E14EC1B62766BF57D0 /* Pods_BJLiveUISwiftDemo.framework */,
+				9FF6C08C2474BF4BE02CD5A3 /* Pods_BJLiveUISwiftDemoTests.framework */,
+				FD422E9FF40E7D9D2C4654EE /* Pods_BJLiveUISwiftDemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 				TargetAttributes = {
 					DFD129A51EF2960600A74BBF = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 999368SJ2Y;
+						DevelopmentTeam = 5EMFG9Z439;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -615,7 +615,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 999368SJ2Y;
+				DEVELOPMENT_TEAM = 5EMFG9Z439;
 				INFOPLIST_FILE = BJLiveUISwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baijiacloud.BJLiveUISwiftDemo;
@@ -632,7 +632,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 999368SJ2Y;
+				DEVELOPMENT_TEAM = 5EMFG9Z439;
 				INFOPLIST_FILE = BJLiveUISwiftDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baijiacloud.BJLiveUISwiftDemo;
