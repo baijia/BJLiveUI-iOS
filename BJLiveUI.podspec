@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name          = 'BJLiveUI'
-    s.version       = '0.1.0'
+    s.version       = '0.2.0-alpha'
     s.summary       = 'BJLiveUI SDK.'
     s.description   = 'BJLiveUI SDK for iOS.'
 
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
     s.ios.public_header_files  = 'frameworks/BJLiveUI.framework/Versions/A/Headers/**/*.h'
     s.ios.resource             = 'frameworks/BJLiveUI.framework/Versions/A/Resources/**/*'
     s.ios.vendored_frameworks  = 'frameworks/BJLiveUI.framework'
-    s.frameworks    = ['CoreGraphics', 'Foundation', 'MobileCoreServices', 'Photos', 'UIKit', 'WebKit']
+    s.frameworks    = ['CoreGraphics', 'Foundation', 'MobileCoreServices', 'Photos', 'SafariServices', 'UIKit', 'WebKit']
 
     # s.xcconfig = { 'ENABLE_BITCODE' => 'NO' }
     s.xcconfig = {
@@ -30,12 +30,18 @@ Pod::Spec.new do |s|
         'ENABLE_BITCODE' => 'NO'
     }
 
-    s.dependency 'BJLiveCore', '~> 0.4.0'
-    s.dependency 'Masonry'
-    s.dependency 'MBProgressHUD', '~> 1.0'
-    s.dependency 'QBImagePickerController', '~> 3.0'
+    s.dependency 'BJLiveBase', '~> 0.1.0-alpha'
+    s.dependency 'BJLiveBase/Base'
+    s.dependency 'BJLiveBase/Auth'
+    s.dependency 'BJLiveBase/Ext'
+    s.dependency 'BJLiveBase/HUD'
+    s.dependency 'BJLiveBase/Masonry'
+    s.dependency 'BJLiveBase/Networking'
+    s.dependency 'BJLiveBase/WebImage/AFNetworking'
 
-    # DEPRECATED
-    s.dependency 'libextobjc/EXTScope'
+    s.dependency 'BJLiveCore', '~> 0.6.0-alpha02'
+    s.dependency 'Masonry'
+    s.dependency 'MBProgressHUD'
+    s.dependency 'QBImagePickerController', '~> 3.0'
 
 end
