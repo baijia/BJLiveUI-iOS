@@ -12,7 +12,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BJLEmoticonKeyboardView : UIView <UICollectionViewDataSource, UICollectionViewDelegate, UIScrollViewDelegate>
+@interface BJLEmoticonKeyboardView : UIView <
+UICollectionViewDataSource,
+UICollectionViewDelegate,
+UIScrollViewDelegate>
 
 @property (nonatomic, copy, nullable) NSArray<BJLEmoticon *> *emoticons;
 

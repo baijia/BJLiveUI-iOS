@@ -29,6 +29,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface BJLRoomViewController : UIViewController <UIGestureRecognizerDelegate>
 
+/** 直播教室
+ 参考 `BJLiveCore` */
+@property (nonatomic, readonly, nullable) BJLRoom *room;
+
 /** 事件回调 `delegate` */
 @property (nonatomic, weak) id<BJLRoomViewControllerDelegate> delegate;
 
@@ -60,10 +64,10 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)exit;
 
-/** 设置教室右上方自定义按钮，从右到左显示
- 点击按钮的事件可自行处理，如果需要想用户列表一样显示一个 view-controller，可在 `<BJLRoomViewControllerDelegate>` 的 `roomViewController:viewControllerForTopBarCustomButton:` 方法中返回该 view-controller
+/** 设置教室右上方自定义按钮，贴近关闭按钮、从右到左显示
+ 点击按钮的事件可自行处理，如果需要想用户列表一样显示一个 view-controller，可在 `<BJLRoomViewControllerDelegate>` 的 `roomViewController:viewControllerForCustomButton:` 方法中返回该 view-controller
  */
-- (void)setTopBarCustomButtons:(NSArray<UIButton *> *)buttons;
+- (void)setCustomButtons:(NSArray<UIButton *> *)buttons;
 
 @end
 
@@ -109,7 +113,7 @@ NS_ASSUME_NONNULL_BEGIN
  通过该属性可以设置统一样式的标题、导航栏按钮、底部按钮、以及关闭等，参考 `BJLOverlayContainerController`
  */
 - (nullable UIViewController *)roomViewController:(BJLRoomViewController *)roomViewController
-        viewControllerToShowForTopBarCustomButton:(UIButton *)button;
+              viewControllerToShowForCustomButton:(UIButton *)button;
 
 @end
 

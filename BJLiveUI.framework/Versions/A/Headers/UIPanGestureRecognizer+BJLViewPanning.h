@@ -9,7 +9,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "UIKit+BJLHandler.h"
+#import <BJLiveCore/UIKit+BJLHandler.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) CGFloat aspectRatio;
 
 @property (nonatomic, copy, nullable) void (^toggleTopBarCallback)(id _Nullable sender);
+@property (nonatomic, copy, nullable) void (^showMenuCallback)(id _Nullable sender);
 
 @property (nonatomic) BOOL showsPageControlButton;
 @property (nonatomic) NSInteger pageIndex, pageCount;

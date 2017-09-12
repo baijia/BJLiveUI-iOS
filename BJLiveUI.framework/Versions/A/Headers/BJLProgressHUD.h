@@ -1,6 +1,6 @@
 //
 //  BJLProgressHUD.h
-//  NBKit
+//  BJLiveUI
 //
 //  Created by MingLQ on 2015-11-11.
 //  Copyright © 2016年 iOSNewbies. All rights reserved.
@@ -59,7 +59,7 @@ typedef NSTimeInterval (^MBProgressHUDConfig)(__kindof MBProgressHUD *hud);
 @interface MBProgressHUD (BJLiveUIShowing)
 
 - (void)bjl_makeDetailsLabelWithLabelStyle;
-- (void)bjl_make0PointXVersionStyle;
+- (void)bjl_makeVersion0Style; // version 0.x
 
 /**
  *  Create hud for text with method `bjl_hudForTextWithSuperview:`.
@@ -89,7 +89,7 @@ typedef NSTimeInterval (^MBProgressHUDConfig)(__kindof MBProgressHUD *hud);
 
 /**
  *  Create hud for loading with method `hudForLoadingWithSuperview:`.
- *  NOT to auto-hide, ignore `timeInterval` returned from config block.
+ *  NOT to auto-hide, alwanys ignore `timeInterval` returned from config block.
  *  The value of `bjl_passThroughTouches` is NO by default.
  */
 + (instancetype)bjl_showHUDForLoadingWithConfig:(MBProgressHUDConfig)config superview:(UIView *)superview animated:(BOOL)animated;

@@ -6,7 +6,7 @@
 //  Copyright © 2017 Baijia Cloud. All rights reserved.
 //
 
-#import "BJLTableViewController.h"
+#import <BJLiveCore/BJLTableViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

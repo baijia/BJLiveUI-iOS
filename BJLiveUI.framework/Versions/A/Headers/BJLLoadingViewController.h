@@ -16,12 +16,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BJLLoadingViewController : UIViewController <BJLRoomChildViewController>
 
+@property (nonatomic, readonly, getter=isHidden) BOOL hidden;
+
 #pragma mark - callback
 
 @property (nonatomic, copy, nullable) void (^showCallback)(BOOL reloading);
 @property (nonatomic, copy, nullable) void (^hideCallback)();
 @property (nonatomic, copy, nullable) void (^hideCallbackWithError)(BJLError * _Nullable error);
-@property (nonatomic, copy, nullable) void (^backCallback)();
+@property (nonatomic, copy, nullable) void (^exitCallback)();
 
 @end
 
