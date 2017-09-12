@@ -14,27 +14,27 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - BJLiveCore (0.3.0-dylib07):
+  - BJLiveCore (0.5.1-beta02):
     - AFNetworking (~> 3.0)
-    - BJLiveCore/BJHLMediaPlayer (= 0.3.0-dylib07)
+    - BJLiveCore/BJHLMediaPlayer (= 0.5.1-beta02)
     - JRSwizzle
     - libextobjc/EXTScope
-    - LogStat (>= 0.6.2)
+    - LogStat
     - PocketSocket
     - ReactiveObjC
     - SDWebImage
     - YYModel
-  - BJLiveCore/BJHLMediaPlayer (0.3.0-dylib07):
+  - BJLiveCore/BJHLMediaPlayer (0.5.1-beta02):
     - AFNetworking (~> 3.0)
     - JRSwizzle
     - libextobjc/EXTScope
-    - LogStat (>= 0.6.2)
+    - LogStat
     - PocketSocket
     - ReactiveObjC
     - SDWebImage
     - YYModel
-  - BJLiveUI (0.0.9):
-    - BJLiveCore (~> 0.3.0-dylib)
+  - BJLiveUI (0.1.1-beta):
+    - BJLiveCore (~> 0.5.1-beta02)
     - libextobjc/EXTScope
     - Masonry
     - MBProgressHUD (~> 1.0)
@@ -47,11 +47,9 @@ PODS:
   - libextobjc/EXTScope (0.4.1):
     - libextobjc/RuntimeExtensions
   - libextobjc/RuntimeExtensions (0.4.1)
-  - LKDBHelper (2.4.2):
-    - FMDB
-  - LogStat (0.6.6):
+  - LogStat (0.7.0):
     - AFNetworking
-    - LKDBHelper
+    - FMDB
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
   - PocketSocket (1.0.1):
@@ -65,38 +63,33 @@ PODS:
     - PocketSocket/Client
   - QBImagePickerController (3.4.0)
   - ReactiveObjC (3.0.0)
-  - SDWebImage (4.0.0):
-    - SDWebImage/Core (= 4.0.0)
-  - SDWebImage/Core (4.0.0)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
   - YYModel (1.0.4)
 
 DEPENDENCIES:
-  - BJLiveUI (from `../`)
+  - BJLiveUI (= 0.1.1-beta)
   - FLEX (~> 2.0)
   - Masonry
 
-EXTERNAL SOURCES:
-  BJLiveUI:
-    :path: "../"
-
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  BJLiveCore: 197ccc59cf204f464870303115693ad4d94ff58e
-  BJLiveUI: 627335b04dbb7950c5b8e7170baf1d428ed0320c
+  BJLiveCore: 7e7a884ecba7a9be49983b0e45f674ac67cc8453
+  BJLiveUI: 3dbf10957284ca803910cd9119134c6de266e996
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
-  LKDBHelper: ab67373b32f47463bf5f838d730f225824f4492a
-  LogStat: 26619dbf5205a025b427a83da22ba3af5ac3aed9
+  LogStat: 7c3dc8b58894749aa37188a88efcbb53f464162e
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   PocketSocket: 9c6867d66fb4f962af96b9b07f4b45bb561b2c2a
   QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
-  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
   YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 2a97666602930493c31542192b8aa4978241ea9f
+PODFILE CHECKSUM: 34bcea6220b4feb4f153e42e1bf5e81da5cc4256
 
 COCOAPODS: 1.2.1

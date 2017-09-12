@@ -11,7 +11,7 @@
 
 #import "BJViewControllerImports.h"
 
-#import <BJLiveCore/BJLRoom+internal.h>
+// #import <BJLiveCore/BJLRoom+internal.h>
 #import <BJLiveUI/BJLiveUI.h>
 
 // !!!: GSX
@@ -148,7 +148,7 @@ static NSString * const BJLoginNameKey = @"BJLoginName";
 - (void)enterRoomWithJoinCode:(NSString *)joinCode userName:(NSString *)userName {
     [self storeCodeAndName];
     
-    BJLRoom.deployType = [BJAppConfig sharedInstance].deployType; // !!!: internal
+    // BJLRoom.deployType = [BJAppConfig sharedInstance].deployType; // !!!: internal
     
 //    BJLRoomViewController *roomViewController = [BJLRoomViewController
 //                                                 instanceWithID:@"170314xxxxxxxx"

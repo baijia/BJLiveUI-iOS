@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
-source 'http://git.baijiahulian.com/iOS/specs.git'
-# source 'https://github.com/baijia/specs.git'
+# source 'http://git.baijiahulian.com/iOS/specs.git'
+source 'https://github.com/baijia/specs.git'
 
 platform :ios, '8.0'
 # inhibit_all_warnings!
@@ -24,9 +24,10 @@ target 'BJLiveUI' do
     # use_frameworks!
     
     # dev
-    # pod 'BJHL-AVSDK-iOS', :git => 'http://git.baijiahulian.com/video/BJHL-AVSDK-iOS.git', :branch => 'master'
     # pod 'BJLiveCore', :path => '../../BJLiveCore/'
-    pod 'BJLiveUI', :path => '../'
+    # pod 'BJLiveUI', :path => '../'
+    
+    pod 'BJLiveUI', '0.1.1-beta'
     
     # demo
     pod 'Masonry'

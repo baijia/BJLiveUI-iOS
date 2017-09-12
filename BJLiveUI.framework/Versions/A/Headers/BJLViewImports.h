@@ -11,6 +11,7 @@
 #import <libextobjc/EXTScope.h>
 #import <Masonry/Masonry.h>
 
+#import <BJLiveCore/BJLWebImage.h>
 #import <BJLiveCore/NSObject+BJL_M9Dev.h>
 #import <BJLiveCore/NSObject+BJLObserving.h>
 #import <BJLiveCore/UIKit+BJL_M9Dev.h>
@@ -20,7 +21,6 @@
 #import "BJLButton.h"
 #import "BJLHitTestView.h"
 #import "BJLTextField.h"
-#import "BJLWebImage.h"
 
 #import "Masonry+BJLExt.h"
 #import "UIControl+BJLManagedState.h"
