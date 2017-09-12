@@ -20,14 +20,18 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy, nullable) void (^updateConstraintsCallback)(BJLMessageCell * _Nullable cell);
 @property (nonatomic, copy, nullable) void (^retryUploadingCallback)(BJLMessageCell * _Nullable cell);
 
+@property (nonatomic, copy, nullable) BOOL (^linkURLCallback)(BJLMessageCell * _Nullable cell, NSURL *url);
+
 - (void)updateWithMessage:(BJLMessage *)message
               placeholder:(nullable UIImage *)placeholder // for BJLMessageType_image+uploaded
             isCurrentUser:(BOOL)isCurrentUser
-           tableViewWidth:(CGFloat)tableViewWidth;
+           tableViewWidth:(CGFloat)tableViewWidth
+             isHorizontal:(BOOL)isHorizontal;
 
 - (void)updateWithUploadingTask:(BJLChatUploadingTask *)task
                        fromUser:(BJLUser *)fromUser
-                 tableViewWidth:(CGFloat)tableViewWidth;
+                 tableViewWidth:(CGFloat)tableViewWidth
+                   isHorizontal:(BOOL)isHorizontal;
 
 + (NSArray<NSString *> *)allCellIdentifiers;
 + (NSString *)cellIdentifierForMessageType:(BJLMessageType)type;

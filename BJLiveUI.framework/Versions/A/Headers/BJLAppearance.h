@@ -22,6 +22,8 @@ extern const CGFloat BJLScrollIndicatorSize;
 extern const CGFloat BJLAnimateDurationS, BJLAnimateDurationM;
 extern const CGFloat BJLRobotDelayS, BJLRobotDelayM;
 
+extern const UIPopoverArrowDirection UIPopoverArrowDirectionVertical;
+
 #pragma mark -
 
 @interface UIColor (BJLColorLegend)

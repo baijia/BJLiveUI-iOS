@@ -27,6 +27,17 @@ typedef UIRectEdge BJLContentPosition;
 @property (nonatomic, copy, nullable) void (^hideCallback)(id _Nullable sender);
 
 /**
+ `show` 之前设置，`hide` 时自动重置
+ */
+@property (nonatomic, readwrite) BOOL prefersStatusBarHidden; // 默认 YES
+@property (nonatomic) UIColor *backgroundColor; // 默认 [UIColor bjl_lightDimColor]
+
+/**
+ 显示状态
+ */
+@property (nonatomic, readonly, getter=isHidden) BOOL hidden;
+
+/**
  显示
  
  viewController 将被设置到 BJLOverlayContainerController 的 contentViewController
@@ -39,6 +50,8 @@ typedef UIRectEdge BJLContentPosition;
  @param hor/verEdges    不设置 left&right 水平居中、不设置 top&bottom 竖直居中、设置 none 水平、竖直同时居中
  @param hor/verSize     取值 0.0 时不设置约束、edges 可约束尺寸时忽略对应 size，size 不超过屏幕边界
  */
+- (void)showWithContentViewController:(UIViewController *)contentViewController
+               remakeConstraintsBlock:(void (^)(MASConstraintMaker *make, UIView *superView, BOOL isHorizontal))remakeConstraintsBlock;
 - (void)showWithContentViewController:(UIViewController *)contentViewController
                              horEdges:(UIRectEdge)horEdges horSize:(CGSize)horSize
                              verEdges:(UIRectEdge)verEdges verSize:(CGSize)verSize;

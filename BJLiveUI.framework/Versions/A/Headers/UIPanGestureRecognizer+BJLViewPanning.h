@@ -3,13 +3,12 @@
 //  M9Dev
 //
 //  Created by MingLQ on 2017-03-30.
-//  Copyright (c) 2017 MingLQ <minglq.9@gmail.com>.
-//  Released under the MIT license.
+//  Copyright (c) 2017 MingLQ <minglq.9@gmail.com>. Released under the MIT license.
 //
 
 #import <UIKit/UIKit.h>
 
-#import "UIKit+BJLHandler.h"
+#import <BJLiveBase/UIKit+BJLHandler.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

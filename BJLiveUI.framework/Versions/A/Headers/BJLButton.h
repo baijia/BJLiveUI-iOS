@@ -1,6 +1,6 @@
 //
 //  BJLButton.h
-//  NBKit
+//  BJLiveUI
 //
 //  Created by MingLQ on 2015-10-21.
 //  Copyright © 2016年 iOSNewbies. All rights reserved.

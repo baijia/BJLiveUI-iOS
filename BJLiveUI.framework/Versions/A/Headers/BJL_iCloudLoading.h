@@ -7,7 +7,6 @@
 //
 
 #import <MobileCoreServices/MobileCoreServices.h>
-#import <Photos/Photos.h>
 #import <QBImagePickerController/QBImagePickerController.h>
 
 NS_ASSUME_NONNULL_BEGIN

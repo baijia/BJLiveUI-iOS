@@ -32,7 +32,7 @@ BJLRoomChildViewController>
 - (instancetype)initWithRoom:(BJLRoom *)room DEPRECATED_MSG_ATTRIBUTE("use `initWithRoom:userStates:` instead");
 - (instancetype)initWithRoom:(BJLRoom *)room userStates:(BJLUserStateMask)userStates NS_DESIGNATED_INITIALIZER;
 
-@property (nonatomic, copy, nullable) void (^updateVideoPlayingUserCallback)(id _Nullable sender);
+@property (nonatomic, copy, nullable) void (^updateVideoPlayingUserCallback)(BOOL isTeacher, BOOL videoOn);
 
 @end
 

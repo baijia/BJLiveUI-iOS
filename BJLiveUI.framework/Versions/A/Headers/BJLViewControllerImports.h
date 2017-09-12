@@ -8,34 +8,33 @@
 
 #import <UIKit/UIKit.h>
 
-#import <libextobjc/EXTScope.h>
 #import <Masonry/Masonry.h>
 #import <MBProgressHUD/MBProgressHUD.h>
-// #import <NBKit/NBKit.h>
-#import <SDWebImage/UIButton+WebCache.h>
-#import <SDWebImage/UIImageView+WebCache.h>
 #import <YYModel/YYModel.h>
 
-#import <BJLiveCore/BJLiveCore.h>
-#import <BJLiveCore/NSObject+BJL_M9Dev.h>
-#import <BJLiveCore/UIKit+BJL_M9Dev.h>
-#import <BJLiveCore/NSObject+BJLObserving.h>
+#import <BJLiveBase/BJL_EXTScope.h>
+#import <BJLiveBase/BJLHitTestView.h>
+#import <BJLiveBase/BJLProgressHUD.h>
+#import <BJLiveBase/BJLScrollViewController.h>
+#import <BJLiveBase/BJLTableViewController.h>
+#import <BJLiveBase/BJLWebImage.h>
+#import <BJLiveBase/Masonry+inset.h>
+#import <BJLiveBase/NSObject+BJL_M9Dev.h>
+#import <BJLiveBase/NSObject+BJLObserving.h>
+#import <BJLiveBase/UIAlertController+BJLAddAction.h>
+#import <BJLiveBase/UIControl+BJLManagedState.h>
+#import <BJLiveBase/UIKit+BJL_M9Dev.h>
+#import <BJLiveBase/UIKit+BJLHandler.h>
 
-#import "BJLScrollViewController.h"
-#import "BJLTableViewController.h"
+#import <BJLiveCore/BJLiveCore.h>
+
 #import "BJLTableViewController+style.h"
 
 #import "BJLAppearance.h"
 #import "BJLButton.h"
 #import "BJLPlaceholderView.h"
-#import "BJLProgressHUD.h"
-#import "BJLHitTestView.h"
 #import "BJLTextField.h"
 
-#import "Masonry+BJLInset.h"
-#import "UIAlertController+BJLAddAction.h"
-#import "UIControl+BJLManagedState.h"
-#import "UIKit+BJLHandler.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -53,14 +52,14 @@ static inline BOOL BJLIsHorizontalUI(id<UITraitEnvironment> traitEnvironment) {
 
 /** 初始化
  注意需要 KVO 监听 `room.vmsAvailable` 属性，当值为 YES 时 room 的 view-model 才可用
- *  @weakify(self);
+ *  bjl_weakify(self);
  *  [self bjl_kvo:BJLMakeProperty(self.room, vmsAvailable)
  *         filter:^BOOL(NSNumber * _Nullable old, NSNumber * _Nullable now) {
- *             // @strongify(self);
+ *             // bjl_strongify(self);
  *             return now.boolValue;
  *         }
  *       observer:^BOOL(NSNumber * _Nullable old, NSNumber * _Nullable now) {
- *           @strongify(self);
+ *           bjl_strongify(self);
  *           // room 的 view-model 可用
  *           return NO; // 停止监听 vmsAvailable
  *       }];

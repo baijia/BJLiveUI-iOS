@@ -13,7 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BJLRoomViewController (observing)
 
 - (void)makeObservingWhenEnteredInRoom;
-- (void)zoomInPreview:(UIView *)preview;
 
 @end
 

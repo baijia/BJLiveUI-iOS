@@ -6,10 +6,9 @@
 //  Copyright © 2017 Baijia Cloud. All rights reserved.
 //
 
-#import "BJLWebViewController.h"
-#import "BJLViewControllerImports.h"
+#import <BJLiveCore/BJLiveCore.h>
 
-#import "BJLOverlayViewController.h"
+#import <BJLiveBase/BJLWebViewController.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

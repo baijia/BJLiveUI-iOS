@@ -12,9 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BJLRoomViewController (constraints)
 
+- (void)updateStatusBarAndTopBar;
+- (void)updateRecordingStateViewForHorizontal:(BOOL)isHorizontal;
+
 - (void)updateConstraintsForHorizontal:(BOOL)isHorizontal;
-- (void)updateTopBarConstraintsForHorizontal:(BOOL)isHorizontal;
-- (void)updateTapBarRelatedConstraintsForHorizontal:(BOOL)isHorizontal;
+- (void)updatePreviewsAndContentConstraintsForHorizontal:(BOOL)isHorizontal;
 - (void)updateControlsConstraintsForHorizontal:(BOOL)isHorizontal;
 - (void)updateChatConstraintsForHorizontal:(BOOL)isHorizontal;
 

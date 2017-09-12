@@ -1,6 +1,6 @@
 //
 //  BJLTextField.h
-//  NBKit
+//  BJLiveUI
 //
 //  Created by MingLQ on 2016-08-22.
 //  Copyright © 2016年 iOSNewbies. All rights reserved.
