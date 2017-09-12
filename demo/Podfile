@@ -26,7 +26,11 @@ target 'BJLiveUI' do
     # dev
     # pod 'BJHL-AVSDK-iOS', :git => 'http://git.baijiahulian.com/video/BJHL-AVSDK-iOS.git', :branch => 'master'
     # pod 'BJLiveCore', :path => '../../BJLiveCore/'
-    pod 'BJLiveUI', :path => '../'
+    # pod 'BJLiveUI', :path => '../'
+    
+    pod 'BJLiveCore', '0.6.0-alpha02'
+    pod 'BJLiveUI', '0.2.0-alpha02'
+    pod 'LogStat', '0.7.0'
     
     # demo
     pod 'Masonry'
