@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Baijia Cloud. All rights reserved.
 //
 
+#import <BJLiveBase/BJL_EXTScope.h>
 #import <BJLiveCore/BJLiveCore.h>
-#import <libextobjc/EXTScope.h>
 
 #if DEBUG
 #import <FLEX/FLEXManager.h>
@@ -81,7 +81,7 @@
 }
 
 - (void)showDeveloperTools {
-    @weakify(self);
+    bjl_weakify(self);
     
     UIAlertController *alertController = [UIAlertController
                                           alertControllerWithTitle:@"Developer Tools"
@@ -92,7 +92,7 @@
                                                         style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction *action)
                                 {
-                                    // @strongify(self);
+                                    // bjl_strongify(self);
                                     [[FLEXManager sharedManager] showExplorer];
                                 }]];
     
@@ -100,7 +100,7 @@
                                                         style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction *action)
                                 {
-                                    @strongify(self);
+                                    bjl_strongify(self);
                                     [self askToSwitchDeployType];
                                 }]];
     
@@ -108,7 +108,7 @@
                                                         style:UIAlertActionStyleCancel
                                                       handler:^(UIAlertAction *action)
                                 {
-                                    // @strongify(self);
+                                    // bjl_strongify(self);
                                 }]];
     
     [[UIViewController topViewController] presentViewController:alertController
@@ -117,7 +117,7 @@
 }
 
 - (void)askToSwitchDeployType {
-    // @weakify(self);
+    // bjl_weakify(self);
     
     BJLDeployType currentDeployType = [BJAppConfig sharedInstance].deployType;
     
@@ -138,7 +138,7 @@
                                                             style:UIAlertActionStyleDestructive
                                                           handler:^(UIAlertAction *action)
                                     {
-                                        // @strongify(self);
+                                        // bjl_strongify(self);
                                         [BJAppConfig sharedInstance].deployType = deployType;
                                     }]];
     }
@@ -147,7 +147,7 @@
                                                         style:UIAlertActionStyleCancel
                                                       handler:^(UIAlertAction *action)
                                 {
-                                    // @strongify(self);
+                                    // bjl_strongify(self);
                                 }]];
     
     [[UIViewController topViewController] presentViewController:alertController

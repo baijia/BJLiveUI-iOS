@@ -40,9 +40,9 @@ static NSString * const BJAppConfig_deployType = @"BJAppConfig_deployType";
 
 - (void)makeSignals {
 #if DEBUG
-    @weakify(self);
+    bjl_weakify(self);
     [[[RACObserve(self, deployType) skip:1] distinctUntilChanged] subscribeNext:^(id x) {
-        @strongify(self);
+        bjl_strongify(self);
         
         NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
         [userDefaults setInteger:self.deployType forKey:BJAppConfig_deployType];

@@ -11,7 +11,7 @@
 
 #import "BJViewControllerImports.h"
 
-#import <BJLiveCore/BJLRoom+internal.h>
+// #import <BJLiveCore/BJLRoom+internal.h>
 #import <BJLiveUI/BJLiveUI.h>
 
 // !!!: GSX
@@ -73,7 +73,7 @@ static NSString * const BJLoginNameKey = @"BJLoginName";
 }
 
 - (void)makeSignals {
-    @weakify(self);
+    bjl_weakify(self);
     
     // endEditing
     UITapGestureRecognizer *tapGesture = [UITapGestureRecognizer new];
@@ -83,7 +83,7 @@ static NSString * const BJLoginNameKey = @"BJLoginName";
     [[RACSignal merge:@[ tapGesture.rac_gestureSignal,
                          panGesture.rac_gestureSignal ]]
      subscribeNext:^(UIGestureRecognizer *gesture) {
-         @strongify(self);
+         bjl_strongify(self);
          [self.view endEditing:YES];
      }];
     
@@ -92,7 +92,7 @@ static NSString * const BJLoginNameKey = @"BJLoginName";
        distinctUntilChanged]
       skip:1]
      subscribeNext:^(NSString *codeText) {
-         // @strongify(self);
+         // bjl_strongify(self);
          NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
          [userDefaults removeObjectForKey:BJLoginCodeKey];
          [userDefaults synchronize];
@@ -101,7 +101,7 @@ static NSString * const BJLoginNameKey = @"BJLoginName";
        distinctUntilChanged]
       skip:1]
      subscribeNext:^(NSString *nameText) {
-         // @strongify(self);
+         // bjl_strongify(self);
          NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
          [userDefaults removeObjectForKey:BJLoginNameKey];
          [userDefaults synchronize];
@@ -118,18 +118,18 @@ static NSString * const BJLoginNameKey = @"BJLoginName";
                        [RACSignal merge:@[ self.codeLoginView.nameTextField.rac_textSignal,
                                            RACObserve(self.codeLoginView.nameTextField, text) ]] ]
       reduce:^id(NSString *codeText, NSString *nameText) {
-          // @strongify(self);
+          // bjl_strongify(self);
           return @(codeText.length && nameText.length);
       }]
      subscribeNext:^(NSNumber *enabled) {
-         @strongify(self);
+         bjl_strongify(self);
          self.codeLoginView.doneButton.enabled = enabled.boolValue;
      }];
     
     // login
     [[self.codeLoginView.doneButton rac_signalForControlEvents:UIControlEventTouchUpInside]
      subscribeNext:^(UIButton *button) {
-         @strongify(self);
+         bjl_strongify(self);
          [self doneWithButton:button];
      }];
 }
@@ -148,7 +148,7 @@ static NSString * const BJLoginNameKey = @"BJLoginName";
 - (void)enterRoomWithJoinCode:(NSString *)joinCode userName:(NSString *)userName {
     [self storeCodeAndName];
     
-    BJLRoom.deployType = [BJAppConfig sharedInstance].deployType; // !!!: internal
+    // BJLRoom.deployType = [BJAppConfig sharedInstance].deployType; // !!!: internal
     
 //    BJLRoomViewController *roomViewController = [BJLRoomViewController
 //                                                 instanceWithID:@"170314xxxxxxxx"

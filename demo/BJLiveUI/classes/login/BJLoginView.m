@@ -176,10 +176,10 @@ static CGFloat const margin = 10.0/* , textLeftMargin = 5.0 */;
         make.size.mas_equalTo(CGSizeMake(27.0, 27.0));
     }];
     
-    @weakify(/* self, */ textField);
+    bjl_weakify(/* self, */ textField);
     [[button rac_signalForControlEvents:UIControlEventTouchUpInside]
      subscribeNext:^(id x) {
-         @strongify(/* self, */ textField);
+         bjl_strongify(/* self, */ textField);
          [textField becomeFirstResponder];
      }];
     
