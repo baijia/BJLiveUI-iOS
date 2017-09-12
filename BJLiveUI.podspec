@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "BJLiveUI"
-  s.version = "0.1.0"
+  s.version = "0.1.1-beta"
   s.summary = "BJLiveUI SDK."
   s.description = 'BJLiveUI SDK for iOS.'
   s.license = 'MIT'
@@ -16,13 +16,13 @@ Pod::Spec.new do |s|
   s.ios.source_files         = 'BJLiveUI.framework/Versions/A/Headers/**/*.h'
   s.ios.resource             = 'BJLiveUI.framework/Versions/A/Resources/**/*'
   s.ios.vendored_frameworks  = 'BJLiveUI.framework'
-  s.frameworks = ['CoreGraphics', 'Foundation', 'MobileCoreServices', 'Photos', 'UIKit']
+  s.frameworks = ['CoreGraphics', 'Foundation', 'MobileCoreServices', 'Photos', 'SafariServices', 'UIKit', 'WebKit']
 
   s.requires_arc = true
   # s.xcconfig = {"ENABLE_BITCODE" => "NO"}
   s.xcconfig = {"ENABLE_BITCODE" => "NO", "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES" => "YES"}
 
-  s.dependency 'BJLiveCore', '~> 0.3.0-dylib'
+  s.dependency 'BJLiveCore', '~> 0.5.1-beta02'
   s.dependency 'Masonry'
   s.dependency 'MBProgressHUD', '~> 1.0'
   s.dependency 'QBImagePickerController', '~> 3.0'
