@@ -17,11 +17,11 @@ Pod::Spec.new do |s|
         :git => 'https://github.com/baijia/BJLiveUI-iOS.git',
         :tag => s.version.to_s
     }
-    s.ios.preserve_paths       = 'BJLiveUI.framework'
-    s.ios.source_files         = 'BJLiveUI.framework/Versions/A/Headers/**/*.h'
-    s.ios.public_header_files  = 'BJLiveUI.framework/Versions/A/Headers/**/*.h'
-    s.ios.resource             = 'BJLiveUI.framework/Versions/A/Resources/**/*'
-    s.ios.vendored_frameworks  = 'BJLiveUI.framework'
+    s.ios.preserve_paths       = 'frameworks/BJLiveUI.framework'
+    s.ios.source_files         = 'frameworks/BJLiveUI.framework/Versions/A/Headers/**/*.h'
+    s.ios.public_header_files  = 'frameworks/BJLiveUI.framework/Versions/A/Headers/**/*.h'
+    s.ios.resource             = 'frameworks/BJLiveUI.framework/Versions/A/Resources/**/*'
+    s.ios.vendored_frameworks  = 'frameworks/BJLiveUI.framework'
     s.frameworks    = ['CoreGraphics', 'Foundation', 'MobileCoreServices', 'Photos', 'UIKit', 'WebKit']
 
     # s.xcconfig = { 'ENABLE_BITCODE' => 'NO' }
