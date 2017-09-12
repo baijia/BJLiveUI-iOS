@@ -29,7 +29,7 @@ target 'BJLiveUI' do
     # pod 'BJLiveUI', :path => '../'
     
     pod 'BJLiveCore', '0.6.0-alpha02'
-    pod 'BJLiveUI', '0.2.0-alpha02'
+    pod 'BJLiveUI', '0.2.0-alpha'
     pod 'LogStat', '0.7.0'
     
     # demo
