@@ -26,11 +26,9 @@ target 'BJLiveUI' do
     # dev
     # pod 'BJLiveBase', :path => '../../BJLiveBase/'
     # pod 'BJLiveCore', :path => '../../BJLiveCore/'
-    pod 'BJLiveUI', :path => '../'
+    # pod 'BJLiveUI', :path => '../'
     
-    # pod 'BJLiveCore', '0.6.0-alpha02'
-    # pod 'BJLiveUI', '0.2.0-alpha'
-    # pod 'LogStat', '0.7.0'
+    pod 'BJLiveUI', '~> 1.0.0'
     
     # demo
     pod 'Masonry'
