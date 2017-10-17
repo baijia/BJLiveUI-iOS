@@ -1,0 +1,40 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/baijia/specs.git'
+# source 'http://git.baijiahulian.com/iOS/specs.git'
+
+platform :ios, '9.0'
+
+target 'BJLiveUISwiftDemo' do
+    # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+    # use_frameworks!
+    
+    # Pods for BJLiveUISwiftDemo
+    
+    # pod 'BJLiveBase', :path => '../../BJLiveBase/'
+    # pod 'BJLiveCore', :path => '../../BJLiveCore/'
+    # pod 'BJLiveUI', :path => '../'
+    
+    pod 'BJLiveUI'
+    pod 'BJLiveCore', '~> 1.0.0'
+    
+    target 'BJLiveUISwiftDemoTests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+    
+    target 'BJLiveUISwiftDemoUITests' do
+        inherit! :search_paths
+        # Pods for testing
+    end
+    
+#    post_install do |installer|
+#        installer.pods_project.targets.each do |target|
+#            target.build_configurations.each do |config|
+#                if target.name == "BJLiveCore"
+#                    config.build_settings["OTHER_LDFLAGS"] = '$(inherited) "-ObjC"'
+#                end
+#            end
+#        end
+#    end
+    
+end
