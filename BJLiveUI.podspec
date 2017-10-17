@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.platform      = :ios
     s.ios.deployment_target = '8.0'
 
-    s.source        = { :git => 'http://git.baijiahulian.com/BaijiaCloud-iOS/BJLiveUI.git', :tag => s.version.to_s }
+    s.source        = { :git => 'https://github.com/baijia/BJLiveUI-iOS.git', :tag => s.version.to_s }
     s.source_files  = ['classes', 'classes/**/*.{h,m}']
     s.public_header_files = [
         'classes/**/BJL*.h',
