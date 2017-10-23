@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08C79BE569BCB9FA2E732A6A /* libPods-BJLiveUISwiftDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F38648F56067CC952C25E915 /* libPods-BJLiveUISwiftDemoUITests.a */; };
+		3F4607DB5EC34CCD4D38132F /* Pods_BJLiveUISwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC87F7F8756081FD9E5E2AE2 /* Pods_BJLiveUISwiftDemoTests.framework */; };
+		41EDA5113F55C21E7E4E3CC2 /* Pods_BJLiveUISwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB5CE7A9DAD94FB0C55A05F /* Pods_BJLiveUISwiftDemoUITests.framework */; };
 		53495D231F73A231009A3012 /* BJLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53495D221F73A231009A3012 /* BJLoginViewController.swift */; };
 		53836AAB1F752B6E00A0FE98 /* BJLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53836AAA1F752B6E00A0FE98 /* BJLoginView.swift */; };
-		BEF23B6F645A9E6F97A3B4F1 /* libPods-BJLiveUISwiftDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07398D0BFAB31D25A0204738 /* libPods-BJLiveUISwiftDemoTests.a */; };
+		7C4E396B35EEEE26AB16AED0 /* Pods_BJLiveUISwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568AC0A74AC9A5ED7BFE7B55 /* Pods_BJLiveUISwiftDemo.framework */; };
 		DF7FCEB91F95B47C00B12021 /* NSObject+SwiftObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7FCEB81F95B47C00B12021 /* NSObject+SwiftObserver.m */; };
 		DFD129AA1EF2960600A74BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD129A91EF2960600A74BBF /* AppDelegate.swift */; };
 		DFD129AF1EF2960600A74BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD129AD1EF2960600A74BBF /* Main.storyboard */; };
@@ -18,7 +19,6 @@
 		DFD129B41EF2960600A74BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD129B21EF2960600A74BBF /* LaunchScreen.storyboard */; };
 		DFD129BF1EF2960600A74BBF /* BJLiveUISwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD129BE1EF2960600A74BBF /* BJLiveUISwiftDemoTests.swift */; };
 		DFD129CA1EF2960600A74BBF /* BJLiveUISwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD129C91EF2960600A74BBF /* BJLiveUISwiftDemoUITests.swift */; };
-		E7C27E22B4A3694254E46C52 /* libPods-BJLiveUISwiftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D80F5141D23B5C366D989CEE /* libPods-BJLiveUISwiftDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +40,14 @@
 
 /* Begin PBXFileReference section */
 		06089DC4591CC9BE7AF71C8B /* Pods-BJLiveUISwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoUITests/Pods-BJLiveUISwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		07398D0BFAB31D25A0204738 /* libPods-BJLiveUISwiftDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUISwiftDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8DD37979D2911DC7ED5556 /* Pods-BJLiveUISwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoTests/Pods-BJLiveUISwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1EA7193C5B9E1A63D7D99B11 /* Pods-BJLiveUISwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemo/Pods-BJLiveUISwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2FEF9CB46D6278315D767630 /* Pods-BJLiveUISwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemo/Pods-BJLiveUISwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		53495D221F73A231009A3012 /* BJLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJLoginViewController.swift; sourceTree = "<group>"; };
 		53836AAA1F752B6E00A0FE98 /* BJLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJLoginView.swift; sourceTree = "<group>"; };
+		568AC0A74AC9A5ED7BFE7B55 /* Pods_BJLiveUISwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		950776ABC767BC635CC2B6DC /* Pods-BJLiveUISwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoTests/Pods-BJLiveUISwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		D80F5141D23B5C366D989CEE /* libPods-BJLiveUISwiftDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUISwiftDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEB5CE7A9DAD94FB0C55A05F /* Pods_BJLiveUISwiftDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD41A7F2882F69CA20151F20 /* Pods-BJLiveUISwiftDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoUITests/Pods-BJLiveUISwiftDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DF7FCEB71F95B47B00B12021 /* NSObject+SwiftObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwiftObserver.h"; sourceTree = "<group>"; };
 		DF7FCEB81F95B47C00B12021 /* NSObject+SwiftObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwiftObserver.m"; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		DFD129C91EF2960600A74BBF /* BJLiveUISwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJLiveUISwiftDemoUITests.swift; sourceTree = "<group>"; };
 		DFD129CB1EF2960600A74BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFD129D71EF296F200A74BBF /* BJLiveUISwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BJLiveUISwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		F38648F56067CC952C25E915 /* libPods-BJLiveUISwiftDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUISwiftDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC87F7F8756081FD9E5E2AE2 /* Pods_BJLiveUISwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7C27E22B4A3694254E46C52 /* libPods-BJLiveUISwiftDemo.a in Frameworks */,
+				7C4E396B35EEEE26AB16AED0 /* Pods_BJLiveUISwiftDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEF23B6F645A9E6F97A3B4F1 /* libPods-BJLiveUISwiftDemoTests.a in Frameworks */,
+				3F4607DB5EC34CCD4D38132F /* Pods_BJLiveUISwiftDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08C79BE569BCB9FA2E732A6A /* libPods-BJLiveUISwiftDemoUITests.a in Frameworks */,
+				41EDA5113F55C21E7E4E3CC2 /* Pods_BJLiveUISwiftDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +98,9 @@
 		0E0DFCC081576FC8F52F5434 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D80F5141D23B5C366D989CEE /* libPods-BJLiveUISwiftDemo.a */,
-				07398D0BFAB31D25A0204738 /* libPods-BJLiveUISwiftDemoTests.a */,
-				F38648F56067CC952C25E915 /* libPods-BJLiveUISwiftDemoUITests.a */,
+				568AC0A74AC9A5ED7BFE7B55 /* Pods_BJLiveUISwiftDemo.framework */,
+				FC87F7F8756081FD9E5E2AE2 /* Pods_BJLiveUISwiftDemoTests.framework */,
+				CEB5CE7A9DAD94FB0C55A05F /* Pods_BJLiveUISwiftDemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -376,11 +376,29 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BJLiveUISwiftDemo/Pods-BJLiveUISwiftDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/BJLiveBase/BJLiveBase.framework",
 				"${PODS_ROOT}/BJLiveCore/frameworks/BJHLMediaPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/PocketSocket/PocketSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/QBImagePickerController/QBImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
+				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BJLiveBase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BJHLMediaPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PocketSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QBImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -452,8 +470,167 @@
 				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets",
 				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_next.imageset",
 				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_prev.imageset",
-				"${PODS_ROOT}/BJLiveUI/images/BJLiveUI.xcassets",
-				$PODS_CONFIGURATION_BUILD_DIR/QBImagePickerController/QBImagePicker.bundle,
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_bg_name.imageset/bjl_bg_name@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_bg_name.imageset/bjl_bg_name@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_bg_name.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_bg_preview.imageset/bjl_bg_preview@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_bg_preview.imageset/bjl_bg_preview@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_bg_preview.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_bg_topbar.imageset/bjl_bg_topbar.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_bg_topbar.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_announcement.imageset/bjl_ic_announcement@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_announcement.imageset/bjl_ic_announcement@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_announcement.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_arrow_moremsg.imageset/bjl_ic_arrow_moremsg@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_arrow_moremsg.imageset/bjl_ic_arrow_moremsg@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_arrow_moremsg.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_clearall.imageset/bjl_ic_clearall@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_clearall.imageset/bjl_ic_clearall@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_clearall.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_emotion.imageset/bjl_ic_emotion@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_emotion.imageset/bjl_ic_emotion@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_emotion.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_exit.imageset/bjl_ic_exit@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_exit.imageset/bjl_ic_exit@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_exit.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_jpg.imageset/bjl_ic_file_jpg@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_jpg.imageset/bjl_ic_file_jpg@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_jpg.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_PDF.imageset/bjl_ic_file_PDF@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_PDF.imageset/bjl_ic_file_PDF@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_PDF.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_PPT.imageset/bjl_ic_file_PPT@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_PPT.imageset/bjl_ic_file_PPT@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_PPT.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_handup.imageset/bjl_ic_handup@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_handup.imageset/bjl_ic_handup@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_handup.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_handup_on.imageset/bjl_ic_handup_on@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_handup_on.imageset/bjl_ic_handup_on@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_handup_on.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_help.imageset/bjl_ic_help@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_help.imageset/bjl_ic_help@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_help.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_img.imageset/bjl_ic_img@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_img.imageset/bjl_ic_img@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_img.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_keybord.imageset/bjl_ic_keybord@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_keybord.imageset/bjl_ic_keybord@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_keybord.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_lightpen.imageset/bjl_ic_lightpen@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_lightpen.imageset/bjl_ic_lightpen@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_lightpen.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_lightpen_on.imageset/bjl_ic_lightpen_on@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_lightpen_on.imageset/bjl_ic_lightpen_on@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_lightpen_on.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxiang.imageset/bjl_ic_luxiang@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxiang.imageset/bjl_ic_luxiang@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxiang.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxianging.imageset/bjl_ic_luxianging@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxianging.imageset/bjl_ic_luxianging@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxianging.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxiang_on.imageset/bjl_ic_luxiang_on@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxiang_on.imageset/bjl_ic_luxiang_on@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxiang_on.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_more.imageset/bjl_ic_more@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_more.imageset/bjl_ic_more@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_more.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_ppt.imageset/bjl_ic_ppt@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_ppt.imageset/bjl_ic_ppt@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_ppt.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_ppt_empty.imageset/bjl_ic_ppt_empty@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_ppt_empty.imageset/bjl_ic_ppt_empty@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_ppt_empty.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_rotate.imageset/bjl_ic_rotate@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_rotate.imageset/bjl_ic_rotate@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_rotate.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_sentmsg.imageset/bjl_ic_sentmsg@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_sentmsg.imageset/bjl_ic_sentmsg@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_sentmsg.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_setting.imageset/bjl_ic_setting@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_setting.imageset/bjl_ic_setting@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_setting.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_speakreq_more.imageset/bjl_ic_speakreq_more@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_speakreq_more.imageset/bjl_ic_speakreq_more@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_speakreq_more.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_1.imageset/bjl_ic_stopaudio_1@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_1.imageset/bjl_ic_stopaudio_1@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_1.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_2.imageset/bjl_ic_stopaudio_2@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_2.imageset/bjl_ic_stopaudio_2@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_2.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_3.imageset/bjl_ic_stopaudio_3@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_3.imageset/bjl_ic_stopaudio_3@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_3.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_4.imageset/bjl_ic_stopaudio_4@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_4.imageset/bjl_ic_stopaudio_4@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_4.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_5.imageset/bjl_ic_stopaudio_5@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_5.imageset/bjl_ic_stopaudio_5@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_5.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_6.imageset/bjl_ic_stopaudio_6@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_6.imageset/bjl_ic_stopaudio_6@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_6.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_closed.imageset/bjl_ic_stopaudio_closed@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_closed.imageset/bjl_ic_stopaudio_closed@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_closed.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopvideo_closed.imageset/bjl_ic_stopvideo_closed@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopvideo_closed.imageset/bjl_ic_stopvideo_closed@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopvideo_closed.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopvideo_open.imageset/bjl_ic_stopvideo_open@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopvideo_open.imageset/bjl_ic_stopvideo_open@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopvideo_open.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_users.imageset/bjl_ic_users@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_users.imageset/bjl_ic_users@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_users.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_video_on.imageset/bjl_ic_video_on@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_video_on.imageset/bjl_ic_video_on@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_video_on.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_menubg.imageset/bjl_menubg@2x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_menubg.imageset/bjl_menubg@3x.png",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_menubg.imageset/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/Contents.json",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_bg_name.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_bg_preview.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_bg_topbar.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_announcement.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_arrow_moremsg.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_clearall.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_emotion.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_exit.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_jpg.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_PDF.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_file_PPT.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_handup.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_handup_on.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_help.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_img.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_keybord.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_lightpen.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_lightpen_on.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxiang.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxianging.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_luxiang_on.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_more.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_ppt.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_ppt_empty.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_rotate.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_sentmsg.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_setting.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_speakreq_more.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_1.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_2.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_3.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_4.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_5.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_6.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopaudio_closed.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopvideo_closed.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_stopvideo_open.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_users.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_video_on.imageset",
+				"${PODS_ROOT}/../../frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_menubg.imageset",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (

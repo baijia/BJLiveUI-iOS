@@ -1,20 +1,20 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/baijia/specs.git'
-# source 'http://git.baijiahulian.com/iOS/specs.git'
+# source 'git@git.baijiayun.com:iOS/specs.git'
 
 platform :ios, '9.0'
 
 target 'BJLiveUISwiftDemo' do
     # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
-    # use_frameworks!
+    use_frameworks!
     
     # Pods for BJLiveUISwiftDemo
     
     # pod 'BJLiveBase', :path => '../../BJLiveBase/'
     # pod 'BJLiveCore', :path => '../../BJLiveCore/'
-    # pod 'BJLiveUI', :path => '../'
+    pod 'BJLiveUI', :path => '../'
     
-    pod 'BJLiveUI'
+    # pod 'BJLiveUI'
     pod 'BJLiveCore', '~> 1.0.0'
     
     target 'BJLiveUISwiftDemoTests' do

@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
-# source 'http://git.baijiahulian.com/iOS/specs.git'
+# source 'git@git.baijiayun.com:iOS/specs.git'
 source 'https://github.com/baijia/specs.git'
 
 platform :ios, '8.0'
@@ -26,9 +26,9 @@ target 'BJLiveUI' do
     # dev
     # pod 'BJLiveBase', :path => '../../BJLiveBase/'
     # pod 'BJLiveCore', :path => '../../BJLiveCore/'
-    # pod 'BJLiveUI', :path => '../'
+    pod 'BJLiveUI', :path => '../'
     
-    pod 'BJLiveUI', '~> 1.0.0'
+    # pod 'BJLiveUI', '~> 1.0.0'
     
     # demo
     pod 'Masonry'
