@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name          = 'BJLiveUI'
-    s.version       = '1.0.0'
+    s.version       = '1.0.1'
     s.summary       = 'BJLiveUI SDK.'
     s.description   = 'BJLiveUI SDK for iOS.'
 
@@ -13,34 +13,13 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '8.0'
 
     s.source        = { :git => 'https://github.com/baijia/BJLiveUI-iOS.git', :tag => s.version.to_s }
-    s.source_files  = ['classes', 'classes/**/*.{h,m}']
-    s.public_header_files = [
-        'classes/**/BJL*.h',
-        'classes/**/NS*.h',
-        'classes/**/UI*.h',
-        'classes/**/Masonry+*.h'
-    ]
-    ## source for internal
-    s.private_header_files = [
-        'classes/**/_*.h',
-        'classes/**/_LP*.h',
-        'classes/**/*+private.h',
-        'classes/**/*+protected.h'
-    ]
-    ## package for public
-    # s.private_header_files = [
-    #     'classes/**/_*.h',
-    #     'classes/**/_LP*.h',
-    #     'classes/**/*+private.h',
-    #     'classes/**/*+protected.h',
-    #     'classes/**/*+internal.h',
-    #     'classes/**/*+GSX.h'
-    # ]
-
-    s.resources     = [
-        'images/**/*.xcassets',
-        'strings/**/*.lproj'
-    ]
+    
+    s.ios.preserve_paths       = 'frameworks/BJLiveUI.framework'
+    s.ios.source_files         = 'frameworks/BJLiveUI.framework/Versions/A/Headers/**/*.h'
+    s.ios.public_header_files  = 'frameworks/BJLiveUI.framework/Versions/A/Headers/**/*.h'
+    s.ios.resource             = 'frameworks/BJLiveUI.framework/Versions/A/Resources/**/*'
+    s.ios.vendored_frameworks  = 'frameworks/BJLiveUI.framework'
+    
     # s.preserve_paths = ['FilesToSave', 'MoreFilesToSave']
 
     s.frameworks    = ['CoreGraphics', 'Foundation', 'MobileCoreServices', 'Photos', 'SafariServices', 'UIKit', 'WebKit']
