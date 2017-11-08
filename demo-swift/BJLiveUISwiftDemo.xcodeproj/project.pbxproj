@@ -7,11 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F4607DB5EC34CCD4D38132F /* Pods_BJLiveUISwiftDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC87F7F8756081FD9E5E2AE2 /* Pods_BJLiveUISwiftDemoTests.framework */; };
-		41EDA5113F55C21E7E4E3CC2 /* Pods_BJLiveUISwiftDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB5CE7A9DAD94FB0C55A05F /* Pods_BJLiveUISwiftDemoUITests.framework */; };
+		08C79BE569BCB9FA2E732A6A /* libPods-BJLiveUISwiftDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F38648F56067CC952C25E915 /* libPods-BJLiveUISwiftDemoUITests.a */; };
 		53495D231F73A231009A3012 /* BJLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53495D221F73A231009A3012 /* BJLoginViewController.swift */; };
 		53836AAB1F752B6E00A0FE98 /* BJLoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53836AAA1F752B6E00A0FE98 /* BJLoginView.swift */; };
-		7C4E396B35EEEE26AB16AED0 /* Pods_BJLiveUISwiftDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 568AC0A74AC9A5ED7BFE7B55 /* Pods_BJLiveUISwiftDemo.framework */; };
+		BEF23B6F645A9E6F97A3B4F1 /* libPods-BJLiveUISwiftDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07398D0BFAB31D25A0204738 /* libPods-BJLiveUISwiftDemoTests.a */; };
 		DF7FCEB91F95B47C00B12021 /* NSObject+SwiftObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7FCEB81F95B47C00B12021 /* NSObject+SwiftObserver.m */; };
 		DFD129AA1EF2960600A74BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD129A91EF2960600A74BBF /* AppDelegate.swift */; };
 		DFD129AF1EF2960600A74BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD129AD1EF2960600A74BBF /* Main.storyboard */; };
@@ -19,6 +18,7 @@
 		DFD129B41EF2960600A74BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD129B21EF2960600A74BBF /* LaunchScreen.storyboard */; };
 		DFD129BF1EF2960600A74BBF /* BJLiveUISwiftDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD129BE1EF2960600A74BBF /* BJLiveUISwiftDemoTests.swift */; };
 		DFD129CA1EF2960600A74BBF /* BJLiveUISwiftDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD129C91EF2960600A74BBF /* BJLiveUISwiftDemoUITests.swift */; };
+		E7C27E22B4A3694254E46C52 /* libPods-BJLiveUISwiftDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D80F5141D23B5C366D989CEE /* libPods-BJLiveUISwiftDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,14 +40,14 @@
 
 /* Begin PBXFileReference section */
 		06089DC4591CC9BE7AF71C8B /* Pods-BJLiveUISwiftDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoUITests/Pods-BJLiveUISwiftDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		07398D0BFAB31D25A0204738 /* libPods-BJLiveUISwiftDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUISwiftDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E8DD37979D2911DC7ED5556 /* Pods-BJLiveUISwiftDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoTests/Pods-BJLiveUISwiftDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1EA7193C5B9E1A63D7D99B11 /* Pods-BJLiveUISwiftDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemo/Pods-BJLiveUISwiftDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2FEF9CB46D6278315D767630 /* Pods-BJLiveUISwiftDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemo/Pods-BJLiveUISwiftDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		53495D221F73A231009A3012 /* BJLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BJLoginViewController.swift; sourceTree = "<group>"; };
 		53836AAA1F752B6E00A0FE98 /* BJLoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJLoginView.swift; sourceTree = "<group>"; };
-		568AC0A74AC9A5ED7BFE7B55 /* Pods_BJLiveUISwiftDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		950776ABC767BC635CC2B6DC /* Pods-BJLiveUISwiftDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoTests/Pods-BJLiveUISwiftDemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		CEB5CE7A9DAD94FB0C55A05F /* Pods_BJLiveUISwiftDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D80F5141D23B5C366D989CEE /* libPods-BJLiveUISwiftDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUISwiftDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD41A7F2882F69CA20151F20 /* Pods-BJLiveUISwiftDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJLiveUISwiftDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJLiveUISwiftDemoUITests/Pods-BJLiveUISwiftDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DF7FCEB71F95B47B00B12021 /* NSObject+SwiftObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+SwiftObserver.h"; sourceTree = "<group>"; };
 		DF7FCEB81F95B47C00B12021 /* NSObject+SwiftObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SwiftObserver.m"; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		DFD129C91EF2960600A74BBF /* BJLiveUISwiftDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BJLiveUISwiftDemoUITests.swift; sourceTree = "<group>"; };
 		DFD129CB1EF2960600A74BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFD129D71EF296F200A74BBF /* BJLiveUISwiftDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BJLiveUISwiftDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		FC87F7F8756081FD9E5E2AE2 /* Pods_BJLiveUISwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BJLiveUISwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F38648F56067CC952C25E915 /* libPods-BJLiveUISwiftDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJLiveUISwiftDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C4E396B35EEEE26AB16AED0 /* Pods_BJLiveUISwiftDemo.framework in Frameworks */,
+				E7C27E22B4A3694254E46C52 /* libPods-BJLiveUISwiftDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F4607DB5EC34CCD4D38132F /* Pods_BJLiveUISwiftDemoTests.framework in Frameworks */,
+				BEF23B6F645A9E6F97A3B4F1 /* libPods-BJLiveUISwiftDemoTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41EDA5113F55C21E7E4E3CC2 /* Pods_BJLiveUISwiftDemoUITests.framework in Frameworks */,
+				08C79BE569BCB9FA2E732A6A /* libPods-BJLiveUISwiftDemoUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,9 +98,9 @@
 		0E0DFCC081576FC8F52F5434 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				568AC0A74AC9A5ED7BFE7B55 /* Pods_BJLiveUISwiftDemo.framework */,
-				FC87F7F8756081FD9E5E2AE2 /* Pods_BJLiveUISwiftDemoTests.framework */,
-				CEB5CE7A9DAD94FB0C55A05F /* Pods_BJLiveUISwiftDemoUITests.framework */,
+				D80F5141D23B5C366D989CEE /* libPods-BJLiveUISwiftDemo.a */,
+				07398D0BFAB31D25A0204738 /* libPods-BJLiveUISwiftDemoTests.a */,
+				F38648F56067CC952C25E915 /* libPods-BJLiveUISwiftDemoUITests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -376,29 +376,11 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BJLiveUISwiftDemo/Pods-BJLiveUISwiftDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
-				"${BUILT_PRODUCTS_DIR}/BJLiveBase/BJLiveBase.framework",
 				"${PODS_ROOT}/BJLiveCore/frameworks/BJHLMediaPlayer.framework",
-				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
-				"${BUILT_PRODUCTS_DIR}/PocketSocket/PocketSocket.framework",
-				"${BUILT_PRODUCTS_DIR}/QBImagePickerController/QBImagePickerController.framework",
-				"${BUILT_PRODUCTS_DIR}/ReactiveObjC/ReactiveObjC.framework",
-				"${BUILT_PRODUCTS_DIR}/YYModel/YYModel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BJLiveBase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BJHLMediaPlayer.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PocketSocket.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QBImagePickerController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveObjC.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYModel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -631,6 +613,7 @@
 				"${PODS_ROOT}/BJLiveUI/frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_users.imageset",
 				"${PODS_ROOT}/BJLiveUI/frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_ic_video_on.imageset",
 				"${PODS_ROOT}/BJLiveUI/frameworks/BJLiveUI.framework/Versions/A/Resources/BJLiveUI.xcassets/bjl_menubg.imageset",
+				"$PODS_CONFIGURATION_BUILD_DIR/QBImagePickerController/QBImagePicker.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
