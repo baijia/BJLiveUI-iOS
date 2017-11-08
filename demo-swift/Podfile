@@ -1,6 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/baijia/specs.git'
-# source 'git@git.baijiayun.com:iOS/specs.git'
 
 platform :ios, '9.0'
 
@@ -12,9 +11,9 @@ target 'BJLiveUISwiftDemo' do
     
     # pod 'BJLiveBase', :path => '../../BJLiveBase/'
     # pod 'BJLiveCore', :path => '../../BJLiveCore/'
-    # pod 'BJLiveUI', :path => '../'
+    pod 'BJLiveUI', :path => '../'
     
-    pod 'BJLiveUI', '~> 1.1.0-alpha'
+    # pod 'BJLiveUI', '~> 1.1.0'
     
     target 'BJLiveUISwiftDemoTests' do
         inherit! :search_paths
