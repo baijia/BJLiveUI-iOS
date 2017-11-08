@@ -3,7 +3,7 @@
 //  BJLiveUISwiftDemo
 //
 //  Created by HuangJie on 2017/9/22.
-//  Copyright © 2017年 Baijia Cloud. All rights reserved.
+//  Copyright © 2017年 BaijiaYun. All rights reserved.
 //
 
 import Foundation

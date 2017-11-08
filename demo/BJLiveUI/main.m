@@ -3,7 +3,7 @@
 //  BJLiveUI
 //
 //  Created by MingLQ on 2017-01-16.
-//  Copyright © 2017 Baijia Cloud. All rights reserved.
+//  Copyright © 2017 BaijiaYun. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
