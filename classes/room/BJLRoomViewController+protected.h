@@ -67,7 +67,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, nullable) BJLQuizWebViewController *quizWebViewController;
 
-@property (nonatomic, readonly) BOOL chatHidden, controlsHidden; // NON-KVO
+@property (nonatomic, readonly) BOOL chatHidden, controlsHidden, previewBackgroundImageHidden; // NON-KVO
 @property (nonatomic) BOOL contentAnimating;
 @property (nonatomic) BOOL didUpdateVideoPlayingUser;
 @property (nonatomic) UIScreenEdgePanGestureRecognizer *showGesture;

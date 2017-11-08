@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name          = 'BJLiveUI'
-    s.version       = '1.0.1'
+    s.version       = '1.1.0-alpha'
     s.summary       = 'BJLiveUI SDK.'
     s.description   = 'BJLiveUI SDK for iOS.'
 
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
     s.ios.public_header_files  = 'frameworks/BJLiveUI.framework/Versions/A/Headers/**/*.h'
     s.ios.resource             = 'frameworks/BJLiveUI.framework/Versions/A/Resources/**/*'
     s.ios.vendored_frameworks  = 'frameworks/BJLiveUI.framework'
-    
+
     # s.preserve_paths = ['FilesToSave', 'MoreFilesToSave']
 
     s.frameworks    = ['CoreGraphics', 'Foundation', 'MobileCoreServices', 'Photos', 'SafariServices', 'UIKit', 'WebKit']
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
     s.dependency 'BJLiveBase/Networking'
     s.dependency 'BJLiveBase/WebImage/AFNetworking'
 
-    s.dependency 'BJLiveCore', '~> 1.0.0'
+    s.dependency 'BJLiveCore', '~> 1.1.0-alpha'
     s.dependency 'Masonry'
     s.dependency 'MBProgressHUD', '~> 1.0'
     s.dependency 'QBImagePickerController', '~> 3.0'

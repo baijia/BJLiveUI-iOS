@@ -88,9 +88,10 @@ static const CGFloat chatViewWidth = 260.0;
 }
 
 - (void)updatePreviewsAndContentConstraintsForHorizontal:(BOOL)isHorizontal {
-    BOOL showPreviews = (self.previewsViewController.numberOfItems > 0
-                         && (!isHorizontal || self.previewsViewController.numberOfItems > 2));
-    self.previewsViewController.backgroundView.hidden = !showPreviews;
+    BOOL showBackgroundView = (self.previewsViewController.numberOfItems > 0
+                               && (!isHorizontal || self.previewsViewController.numberOfItems > 2)
+                               && !self.previewBackgroundImageHidden);
+    self.previewsViewController.backgroundView.hidden = !showBackgroundView;
     
     [self.previewsViewController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self.view);

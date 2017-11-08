@@ -161,10 +161,6 @@ static NSString * const cellReuseIdentifier = @"slidePageCell";
     return pptSize;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-}
-
 #pragma mark - scroll
 
 - (void)scrollToIndex:(NSInteger)index {
@@ -176,6 +172,10 @@ static NSString * const cellReuseIdentifier = @"slidePageCell";
     [self.collectionView scrollToItemAtIndexPath:indexPath
                                 atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally
                                         animated:NO];
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

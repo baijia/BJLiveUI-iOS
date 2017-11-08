@@ -280,7 +280,7 @@ static const NSTimeInterval updateAlphaInterval = 0.2;
     bjl_weakify(self);
     
     [self bjl_observe:BJLMakeMethod(self.room.chatVM, receivedMessagesDidOverwrite:)
-             observer:^BOOL{
+             observer:^BOOL(NSArray<BJLMessage *> * _Nullable messages) {
                  bjl_strongify(self);
                  
                  [self.unreadMessages removeAllObjects];
@@ -504,7 +504,6 @@ static const NSTimeInterval updateAlphaInterval = 0.2;
             NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
             if (indexPath) {
                 BOOL wasAtTheBottomOfTableView = [self atTheBottomOfTableView];
-                [self.tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
                 if (wasAtTheBottomOfTableView) {
                     [self scrollToTheEndTableView];
                 }

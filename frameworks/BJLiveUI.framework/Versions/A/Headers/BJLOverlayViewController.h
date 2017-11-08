@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-#import "BJLViewControllerImports.h"
-
 #import "BJLOverlayContainerController.h"
+
+@class MASConstraintMaker;
 
 NS_ASSUME_NONNULL_BEGIN
 
 typedef UIRectEdge BJLContentPosition;
 
-@interface BJLOverlayViewController : UIViewController <BJLRoomChildViewController>
+@interface BJLOverlayViewController : UIViewController
 
 /**
  关闭回调

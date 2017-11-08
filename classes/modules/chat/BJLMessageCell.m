@@ -323,7 +323,7 @@ static const CGFloat imageMessageCellMinHeight = imageMinHeight + verMargins;
                                    self.imgView.backgroundColor = [UIColor bjl_grayImagePlaceholderColor];
                                }
                                [self _updateImageViewWithImageOrNil:image size:image.size];
-                               if (self.updateConstraintsCallback) self.updateConstraintsCallback(self);
+                               if (self.updateConstraintsCallback && !error) self.updateConstraintsCallback(self);
                            }];
 }
 

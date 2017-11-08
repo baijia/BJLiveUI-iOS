@@ -10,6 +10,7 @@
 
 #import <BJLiveBase/NSObject+BJLObserving.h>
 
+#import <BJLiveCore/BJLRoom.h>
 #import <BJLiveCore/BJLUser.h>
 #import <BJLiveCore/NSError+BJLError.h>
 
@@ -69,6 +70,12 @@ NS_ASSUME_NONNULL_BEGIN
  点击按钮的事件可自行处理，如果需要想用户列表一样显示一个 view-controller，可在 `<BJLRoomViewControllerDelegate>` 的 `roomViewController:viewControllerForCustomButton:` 方法中返回该 view-controller
  */
 - (void)setCustomButtons:(NSArray<UIButton *> *)buttons;
+
+/**
+ 设置视频小窗口背景图是否隐藏
+ #param hidden
+ */
+- (void)setPreviewBackgroundImageHidden:(BOOL)hidden;
 
 @end
 

@@ -8,6 +8,8 @@
 
 #import "BJLOverlayViewController.h"
 
+#import "BJLViewControllerImports.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BJLOverlayViewController ()
@@ -22,9 +24,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @implementation BJLOverlayViewController
 
-#pragma mark - lifecycle & <BJLRoomChildViewController>
+#pragma mark - lifecycle
 
-- (instancetype)initWithRoom:(BJLRoom *)room {
+- (instancetype)initWithNibName:(nullable NSString *)nibNameOrNil bundle:(nullable NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nil bundle:nil];
     if (self) {
         self.horEdges = self.verEdges = UIRectEdgeNone;

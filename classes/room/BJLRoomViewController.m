@@ -494,6 +494,11 @@ NS_ASSUME_NONNULL_BEGIN
     }];
 }
 
+- (void)setPreviewBackgroundImageHidden:(BOOL)hidden {
+    self->_previewBackgroundImageHidden = hidden;
+    self.previewsViewController.backgroundView.hidden = hidden;
+}
+
 #pragma mark - lazy load properties
 
 - (void)makeViewControllersOnViewDidLoad {
