@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
     s.name          = 'BJLiveUI'
-    s.version       = '1.1.0-alpha'
+    s.version       = '1.1.0'
     s.summary       = 'BJLiveUI SDK.'
     s.description   = 'BJLiveUI SDK for iOS.'
 
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
     s.dependency 'BJLiveBase/Networking'
     s.dependency 'BJLiveBase/WebImage/AFNetworking'
 
-    s.dependency 'BJLiveCore', '~> 1.1.0-alpha'
+    s.dependency 'BJLiveCore', '~> 1.1.0'
     s.dependency 'Masonry'
     s.dependency 'MBProgressHUD', '~> 1.0'
     s.dependency 'QBImagePickerController', '~> 3.0'

@@ -73,7 +73,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  设置视频小窗口背景图是否隐藏
- #param hidden YES:隐藏；NO：显示
+ #param hidden
  */
 - (void)setPreviewBackgroundImageHidden:(BOOL)hidden;
 
