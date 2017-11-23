@@ -422,6 +422,7 @@
 				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets",
 				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_next.imageset",
 				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_prev.imageset",
+				"${PODS_ROOT}/../../images/BJLiveUI.xcassets",
 				"$PODS_CONFIGURATION_BUILD_DIR/QBImagePickerController/QBImagePicker.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
