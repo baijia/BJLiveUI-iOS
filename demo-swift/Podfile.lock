@@ -52,8 +52,6 @@ PODS:
   - BJLiveUI (1.2.0):
     - BJLiveUI/static (= 1.2.0)
   - BJLiveUI/static (1.2.0):
-    - BJLiveUI/static.dependencies
-  - BJLiveUI/static.dependencies (1.2.0):
     - BJLiveBase
     - BJLiveBase/Auth
     - BJLiveBase/Base
@@ -64,6 +62,7 @@ PODS:
     - BJLiveBase/WebImage/AFNetworking
     - BJLiveCore (= 1.2.0)
     - Masonry
+    - MBProgressHUD (~> 1.0)
     - QBImagePickerController (~> 3.0)
   - BJLLogStat (0.8.0):
     - BJLLogStat/default (= 0.8.0)
@@ -82,17 +81,13 @@ PODS:
   - ReactiveObjC (3.0.0)
 
 DEPENDENCIES:
-  - BJLiveUI (from `../`)
-
-EXTERNAL SOURCES:
-  BJLiveUI:
-    :path: ../
+  - BJLiveUI (~> 1.2.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   BJLiveBase: 92d50d17e803f610d6c5c0a1f4a07ac7e8d1b90a
   BJLiveCore: d4feec7db9839d4b457ca6c59354a80dd4b6ab18
-  BJLiveUI: 51c4c85c366d1204750ada87c5859b7222f4201b
+  BJLiveUI: 5a1777d6ec89ade84a434aa426ddbf1e88bd7cd2
   BJLLogStat: 7654db07e73f6d48c3e0ae4f3fc6a3be9c30c9cb
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
@@ -101,6 +96,6 @@ SPEC CHECKSUMS:
   QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
 
-PODFILE CHECKSUM: 302556fa9f7bf519e5875ae22cbe0b06fdde834b
+PODFILE CHECKSUM: 33454e1c1783d772efc3b0e67cabd261687e4c94
 
 COCOAPODS: 1.3.1

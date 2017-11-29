@@ -12,9 +12,9 @@ target 'BJLiveUISwiftDemo' do
     
     # pod 'BJLiveBase', :path => '../../BJLiveBase/'
     # pod 'BJLiveCore', :path => '../../BJLiveCore/'
-    pod 'BJLiveUI', :path => '../'
+    # pod 'BJLiveUI', :path => '../'
     
-    # pod 'BJLiveUI', '~> 1.1.0'
+    pod 'BJLiveUI', '~> 1.2.0'
     
     target 'BJLiveUISwiftDemoTests' do
         inherit! :search_paths
