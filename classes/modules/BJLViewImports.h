@@ -11,6 +11,9 @@
 
 #import <Masonry/Masonry.h>
 
+// fix error: definition of * must be imported from module BJLiveCore.BJLiveCore before it is required
+#import <BJLiveCore/BJLiveCore.h>
+
 #import <BJLiveBase/BJL_EXTScope.h>
 #import <BJLiveBase/BJLHitTestView.h>
 #import <BJLiveBase/BJLWebImage.h>

@@ -171,9 +171,11 @@ static const CGFloat chatViewWidth = 260.0;
 - (void)updateChatConstraintsForHorizontal:(BOOL)isHorizontal {
     [self.chatViewController.view mas_remakeConstraints:^(MASConstraintMaker *make) {
         MASConstraint *horAlignment;
+        CGFloat leftOffset = 0.0;
         if (isHorizontal) {
             if (self.chatHidden) {
                 horAlignment = make.right;
+                leftOffset = -self.controlsViewController.view.frame.origin.x;
             }
             else {
                 horAlignment = make.left;
@@ -182,7 +184,7 @@ static const CGFloat chatViewWidth = 260.0;
         else {
             horAlignment = make.left;
         }
-        horAlignment.equalTo(self.controlsViewController.view.mas_left).with.offset(0.0); // maybe update
+        horAlignment.equalTo(self.controlsViewController.view.mas_left).with.offset(leftOffset); // maybe update
         make.right.lessThanOrEqualTo(self.controlsViewController.rightLayoutGuide).with.offset(- BJLViewSpaceM).priorityHigh();
         make.top.equalTo(self.previewsViewController.view.mas_bottom);
         make.bottom.equalTo(self.controlsViewController.bottomLayoutGuide);

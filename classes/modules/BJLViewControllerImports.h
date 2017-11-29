@@ -10,7 +10,6 @@
 
 #import <Masonry/Masonry.h>
 #import <MBProgressHUD/MBProgressHUD.h>
-#import <YYModel/YYModel.h>
 
 #import <BJLiveBase/BJL_EXTScope.h>
 #import <BJLiveBase/BJLHitTestView.h>

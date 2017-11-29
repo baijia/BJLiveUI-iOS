@@ -74,6 +74,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) UIPanGestureRecognizer *hideGesture;
 
 - (void)showProgressHUDWithText:(NSString *)text;
+- (void)showLamp;
+- (void)stopShowingLamp;
 - (void)askToExit;
 
 @end

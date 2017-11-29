@@ -9,9 +9,9 @@
 #import "BJLiveUI.h"
 
 NSString * BJLiveUIName(void) {
-    return bjl_NSStringFromPreprocessor(PODSPEC_NAME, @"BJLiveUI");
+    return bjl_NSStringFromPreprocessor(BJLIVEUI_NAME, @"BJLiveUI");
 }
 
 NSString * BJLiveUIVersion(void) {
-    return bjl_NSStringFromPreprocessor(PODSPEC_VERSION, @"-");
+    return bjl_NSStringFromPreprocessor(BJLIVEUI_VERSION, @"-");
 }

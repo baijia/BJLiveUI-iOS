@@ -8,6 +8,8 @@
 
 #import "BJLContentView.h"
 
+#import "BJLViewImports.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BJLContentView ()

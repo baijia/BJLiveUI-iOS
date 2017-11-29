@@ -61,8 +61,16 @@ NSString
 }
 
 - (void)makeSubviews {
-    if ([self.reuseIdentifier isEqualToString:BJLPreviewCellID_view]
-        || [self.reuseIdentifier isEqualToString:BJLPreviewCellID_view_label]) {
+    if ([self.reuseIdentifier isEqualToString:BJLPreviewCellID_view]) {
+        self.contentView.backgroundColor = [UIColor whiteColor];
+        self->_customCoverView = ({
+            UIView *view = [UIView new];
+            [self.contentView addSubview:view];
+            view;
+        });
+    }
+    
+    if ([self.reuseIdentifier isEqualToString:BJLPreviewCellID_view_label]) {
         self->_customCoverView = ({
             UIView *view = [UIView new];
             [self.contentView addSubview:view];

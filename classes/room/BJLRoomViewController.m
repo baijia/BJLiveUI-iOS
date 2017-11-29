@@ -300,6 +300,8 @@ NS_ASSUME_NONNULL_BEGIN
              bjl_strongify(self);
              self.room.slideshowViewController.view.backgroundColor = [UIColor clearColor];
              self.room.slideshowViewController.placeholderImage = [UIImage bjl_imageWithColor:[UIColor bjl_grayImagePlaceholderColor]];
+             self.room.slideshowViewController.prevPageIndicatorImage = [UIImage imageNamed:@"bjl_ic_ppt_prev"];
+             self.room.slideshowViewController.nextPageIndicatorImage = [UIImage imageNamed:@"bjl_ic_ppt_next"];
              return YES;
          }];
 }
@@ -497,6 +499,65 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setPreviewBackgroundImageHidden:(BOOL)hidden {
     self->_previewBackgroundImageHidden = hidden;
     self.previewsViewController.backgroundView.hidden = hidden;
+}
+
+#pragma mark - lamp
+
+- (void)showLamp {
+    // lampLabel
+    UILabel *lampLabel = ({
+        UILabel *label = [[UILabel alloc] init];
+        label.backgroundColor = [UIColor bjl_colorWithHexString:@"#090300" alpha:0.3];
+        label.layer.masksToBounds = YES;
+        label.layer.cornerRadius = 1.0;
+        label.font = [UIFont systemFontOfSize:10];
+        label.textColor = [UIColor colorWithWhite:1.0 alpha:0.5];
+        label.textAlignment = NSTextAlignmentCenter;
+        label.text = self.room.lampContent;
+        [label sizeToFit];
+        label;
+    });
+    
+    // 文字边距
+    CGSize labelSize = CGSizeMake(lampLabel.bounds.size.width + 20.0, lampLabel.bounds.size.height + 10.0);
+    
+    // 垂直方向位置比例，产生从 垂直方向最小比例（精确到小数点后 3 位） 到 1 之间的一个随机比例，确定跑马灯的垂直方向的位置
+    CGFloat minVerticalRatio = labelSize.height / self.view.bounds.size.height;
+    int temp = ceil(minVerticalRatio * 1000);
+    CGFloat verticalRatio = ((arc4random() % (1000 - temp)) + temp) / 1000.0;
+    
+    [self.view addSubview:lampLabel];
+    [lampLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.view.mas_left).offset(labelSize.width + self.view.bounds.size.width);
+        make.bottom.equalTo(self.view).multipliedBy(verticalRatio);
+        make.size.mas_equalTo(labelSize);
+    }];
+    [self.view layoutIfNeeded];
+    
+    // animation
+    CGFloat speed = 25.0; // 跑马灯速度
+    NSTimeInterval duration = (labelSize.width + self.view.bounds.size.width) / speed;
+    bjl_weakify(self);
+    [UIView animateWithDuration:duration
+                          delay:0.0
+                        options:UIViewAnimationOptionCurveLinear
+                     animations:^{
+                         bjl_strongify(self);
+                         // 设置动画结束后的最终位置
+                         [lampLabel mas_updateConstraints:^(MASConstraintMaker *make) {
+                             make.right.equalTo(self.view.mas_left);
+                         }];
+                         [self.view layoutIfNeeded];
+                     }
+                     completion:^(BOOL finished) {
+                         [lampLabel removeFromSuperview];
+                     }];
+    // 显示间隔
+    [self performSelector:@selector(showLamp) withObject:nil afterDelay:60.0];
+}
+
+- (void)stopShowingLamp {
+    [NSObject cancelPreviousPerformRequestsWithTarget:self selector:@selector(showLamp) object:nil];
 }
 
 #pragma mark - lazy load properties

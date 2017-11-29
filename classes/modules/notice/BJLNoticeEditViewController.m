@@ -257,15 +257,18 @@ NS_ASSUME_NONNULL_BEGIN
         make.top.equalTo(self.titleLabel.mas_bottom).offset(BJLViewSpaceM);
     }];
     
-    NSString *originText = self.noticeTextView.text;
-    self.noticeTextView.text = [@[@"", @""] // 2 lines
-                                componentsJoinedByString:@"\n"];
-    CGFloat height = [self.noticeTextView sizeThatFits:CGSizeMake(CGRectGetWidth(self.noticeTextView.frame), 0)].height;
-    self.noticeTextView.text = originText;
+    CGFloat heightOf2Lines = ({
+        NSString *originText = self.noticeTextView.text;
+        self.noticeTextView.text = [@[@"", @""] // 2 lines
+                                    componentsJoinedByString:@"\n"];
+        CGFloat height = [self.noticeTextView sizeThatFits:CGSizeMake(CGRectGetWidth(self.noticeTextView.frame), 0.0)].height;
+        self.noticeTextView.text = originText;
+        bjl_return height;
+    });
     
     [self.noticeTextView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.top.equalTo(self.textGroupView);
-        make.height.equalTo(@(height));
+        make.height.equalTo(@(heightOf2Lines * 0.75)); // iPhone X 上显示两行高度后，上方空白区域太小
         if (!self.linkTextField) {
             make.bottom.equalTo(self.textGroupView);
         }

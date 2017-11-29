@@ -9,8 +9,6 @@
 #import <UIKit/UIKit.h>
 #import <BJLiveCore/BJLConstants.h>
 
-#import "BJLViewImports.h"
-
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BJLContentView : UIView

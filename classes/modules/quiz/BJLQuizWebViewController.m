@@ -215,7 +215,11 @@ static NSString * const jsInjection = @
 }
 
 - (void)forwardQuizMessage:(NSDictionary<NSString *, id> *)message {
-    NSString *js = [NSString stringWithFormat:@"bjlapp.receivedMessage(%@)", [message yy_modelToJSONString]];
+    NSString *js = [NSString stringWithFormat:@"bjlapp.receivedMessage(%@)", ({
+        NSData *data = [NSJSONSerialization dataWithJSONObject:message options:0 error:NULL];
+        NSString *json = data.length ? [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] : nil;
+        bjl_return json;
+    })];
     NSLog(@"[quiz] %@", js);
     // bjl_weakify(self);
     [self.webView evaluateJavaScript:js completionHandler:^(id _Nullable result, NSError * _Nullable error) {
@@ -304,8 +308,7 @@ static NSString * const jsInjection = @
     }
     
     if ([message.name isEqualToString:@(jsMessage)]) {
-        NSDictionary *json = ([message.body bjl_asDictionary]
-                              ?: [[message.body yy_modelToJSONObject] bjl_asDictionary]);
+        NSDictionary *json = bjl_cast(NSDictionary, message.body);
         if (self.sendQuizMessageCallback) self.sendQuizMessageCallback(json);
         return;
     }

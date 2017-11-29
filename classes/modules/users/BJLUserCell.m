@@ -6,8 +6,6 @@
 //  Copyright © 2017 BaijiaYun. All rights reserved.
 //
 
-#import <BJLiveCore/NSError+BJLError.h>
-
 #import "BJLUserCell.h"
 
 #import "BJLViewImports.h"

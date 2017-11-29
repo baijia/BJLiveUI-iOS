@@ -42,6 +42,7 @@ NS_ASSUME_NONNULL_BEGIN
             [self makeObservingFor1toN];
         }
         [self makeObservingForSpeakingInvite];
+        [self makeObservingForLamp];
         [self makeObservingForRollcall];
         [self makeObservingForNotice];
     }
@@ -360,6 +361,19 @@ NS_ASSUME_NONNULL_BEGIN
              }];
 }
 
+- (void)makeObservingForLamp {
+    [self bjl_kvo:BJLMakeProperty(self.room, lampContent)
+         observer:^BOOL(id  _Nullable old, id  _Nullable now) {
+             if (self.room.lampContent.length) {
+                 [self showLamp];
+             }
+             else {
+                 [self stopShowingLamp];
+             }
+             return YES;
+         }];
+}
+
 - (void)makeObservingForRollcall {
     bjl_weakify(self);
     
@@ -573,6 +587,18 @@ NS_ASSUME_NONNULL_BEGIN
     bjl_weakify(self);
     
     if (!self.room.loginUser.isTeacher) {
+        [self bjl_kvo:BJLMakeProperty(self.room, isSwitching)
+               filter:^BOOL(id _Nullable old, NSNumber * _Nullable now) {
+                   return now.boolValue;
+               }
+             observer:^BOOL(id _Nullable old, id _Nullable now) {
+                 bjl_strongify(self);
+                 if (self.room.isSwitching) {
+                     [self showProgressHUDWithText:@"切换教室中..."];
+                 }
+                 return YES;
+             }];
+        
         [self bjl_kvo:BJLMakeProperty(self.room.onlineUsersVM, activeUsersSynced)
                filter:^BOOL(id _Nullable old, NSNumber * _Nullable now) {
                    // bjl_strongify(self);

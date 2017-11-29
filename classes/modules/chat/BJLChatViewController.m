@@ -434,6 +434,10 @@ static const NSTimeInterval updateAlphaInterval = 0.2;
     });
     
     self.tableView.estimatedRowHeight = [BJLMessageCell estimatedRowHeightForMessageType:BJLMessageType_text];
+    
+    if (@available(iOS 11.0, *)) {
+        self.tableView.insetsContentViewsToSafeArea = NO;
+    }
 }
 
 - (void)scrollToTheEndTableView {

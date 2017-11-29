@@ -11,6 +11,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#define BJLOnePixel ({ \
+    static CGFloat _BJLOnePixel; \
+    static dispatch_once_t onceToken; \
+    dispatch_once(&onceToken, ^{ \
+        _BJLOnePixel = 1.0 / [UIScreen mainScreen].scale; \
+    }); \
+    _BJLOnePixel; \
+})
+
 #define BJLViewSpaceS   5.0
 #define BJLViewSpaceM   10.0
 #define BJLViewSpaceL   15.0
