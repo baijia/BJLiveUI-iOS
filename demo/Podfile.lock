@@ -14,57 +14,58 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
-  - BJLiveBase (1.1.0):
-    - BJLiveBase/Base (= 1.1.0)
-  - BJLiveBase/Auth (1.1.0)
-  - BJLiveBase/Base (1.1.0)
-  - BJLiveBase/Ext (1.1.0)
-  - BJLiveBase/HUD (1.1.0):
+  - BJLiveBase (1.2.0):
+    - BJLiveBase/Base (= 1.2.0)
+  - BJLiveBase/Auth (1.2.0)
+  - BJLiveBase/Base (1.2.0)
+  - BJLiveBase/Ext (1.2.0)
+  - BJLiveBase/HUD (1.2.0):
     - MBProgressHUD (~> 1.0)
-  - BJLiveBase/Masonry (1.1.0):
+  - BJLiveBase/Masonry (1.2.0):
     - BJLiveBase/Swizzle
     - Masonry (~> 1.1)
-  - BJLiveBase/Networking (1.1.0):
+  - BJLiveBase/Networking (1.2.0):
     - AFNetworking (~> 3.0)
-  - BJLiveBase/Swizzle (1.1.0)
-  - BJLiveBase/WebImage/AFNetworking (1.1.0):
+  - BJLiveBase/Swizzle (1.2.0)
+  - BJLiveBase/WebImage/AFNetworking (1.2.0):
     - AFNetworking (~> 3.0)
     - BJLiveBase/WebImage/BJLWebImage
-  - BJLiveBase/WebImage/BJLWebImage (1.1.0)
-  - BJLiveCore (1.1.0):
+  - BJLiveBase/WebImage/BJLWebImage (1.2.0)
+  - BJLiveBase/YYModel (1.2.0)
+  - BJLiveCore (1.2.0):
     - AFNetworking (~> 3.0)
-    - BJLiveBase (~> 1.1.0)
+    - BJLiveBase (~> 1.2.0)
     - BJLiveBase/Base
     - BJLiveBase/Ext
     - BJLiveBase/Networking
     - BJLiveBase/WebImage/AFNetworking
-    - BJLiveCore/static (= 1.1.0)
+    - BJLiveBase/YYModel
+    - BJLiveCore/static (= 1.2.0)
     - PocketSocket
     - ReactiveObjC
-    - YYModel
-  - BJLiveCore/BJHLMediaPlayer (1.1.0):
+  - BJLiveCore/BJHLMediaPlayer (1.2.0):
     - AFNetworking (~> 3.0)
-    - BJLiveBase (~> 1.1.0)
+    - BJLiveBase (~> 1.2.0)
     - BJLiveBase/Base
     - BJLiveBase/Ext
     - BJLiveBase/Networking
     - BJLiveBase/WebImage/AFNetworking
+    - BJLiveBase/YYModel
     - PocketSocket
     - ReactiveObjC
-    - YYModel
-  - BJLiveCore/static (1.1.0):
+  - BJLiveCore/static (1.2.0):
     - AFNetworking (~> 3.0)
-    - BJLiveBase (~> 1.1.0)
+    - BJLiveBase (~> 1.2.0)
     - BJLiveBase/Base
     - BJLiveBase/Ext
     - BJLiveBase/Networking
     - BJLiveBase/WebImage/AFNetworking
+    - BJLiveBase/YYModel
     - BJLiveCore/BJHLMediaPlayer
-    - LogStat (~> 0.7.3)
+    - BJLLogStat (~> 0.8.0)
     - PocketSocket
     - ReactiveObjC
-    - YYModel
-  - BJLiveUI/static.dependencies (1.1.0):
+  - BJLiveUI/static.dependencies (1.2.0):
     - BJLiveBase
     - BJLiveBase/Auth
     - BJLiveBase/Base
@@ -73,19 +74,18 @@ PODS:
     - BJLiveBase/Masonry
     - BJLiveBase/Networking
     - BJLiveBase/WebImage/AFNetworking
-    - BJLiveCore (= 1.1.0)
+    - BJLiveCore (= 1.2.0)
     - Masonry
-    - MBProgressHUD (~> 1.0)
     - QBImagePickerController (~> 3.0)
-  - BJLiveUI/static.source (1.1.0):
+  - BJLiveUI/static.source (1.2.0):
     - BJLiveUI/static.dependencies
+  - BJLLogStat (0.8.0):
+    - AFNetworking
+    - FMDB
   - FLEX (2.4.0)
   - FMDB (2.7.2):
     - FMDB/standard (= 2.7.2)
   - FMDB/standard (2.7.2)
-  - LogStat (0.7.3):
-    - AFNetworking
-    - FMDB
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
   - PocketSocket (1.0.1):
@@ -99,7 +99,6 @@ PODS:
     - PocketSocket/Client
   - QBImagePickerController (3.4.0)
   - ReactiveObjC (3.0.0)
-  - YYModel (1.0.4)
 
 DEPENDENCIES:
   - BJLiveUI/static.source (from `../`)
@@ -112,19 +111,18 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
-  BJLiveBase: a6acc17ff7fa59b0f4162b126012ebf70b330bf0
-  BJLiveCore: 6e9fe5960b2098c7ad107a6a222da195fd0a9ae6
-  BJLiveUI: aad7f169b1d0406034b5dc2385931b88769cdcff
+  BJLiveBase: ccdb7dd3d2c98bcc77a401230f622704243e2b57
+  BJLiveCore: 335098ca05427cfc580a52db596eeb55ef436a2d
+  BJLiveUI: 51c4c85c366d1204750ada87c5859b7222f4201b
+  BJLLogStat: 70010b220b7b4e6508c1f81a28dc433e1c9a55e7
   FLEX: bd1a39e55b56bb413b6f1b34b3c10a0dc44ef079
   FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
-  LogStat: 2c88308cbec17d48104b16a72f7ddfd50e5c45b5
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   PocketSocket: 9c6867d66fb4f962af96b9b07f4b45bb561b2c2a
   QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
   ReactiveObjC: ce79989e8684b9086b5f8d0c74bc7b81a8729c9e
-  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
 
-PODFILE CHECKSUM: 79fab41cd86c47657393bf887a69b79def293535
+PODFILE CHECKSUM: 7a3d410b61f405c03c68d58f43ce207f3b6ae8ee
 
 COCOAPODS: 1.3.1

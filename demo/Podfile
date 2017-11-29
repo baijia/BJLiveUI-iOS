@@ -1,5 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/baijia/specs.git'
+# source 'git@git.baijiayun.com:iOS/specs.git'
 
 platform :ios, '8.0'
 # inhibit_all_warnings!
@@ -25,11 +26,11 @@ target 'BJLiveUI' do
     # dev
     # pod 'BJLiveBase', :path => '../../BJLiveBase/'
     # pod 'BJLiveCore', :path => '../../BJLiveCore/'
-    # pod 'BJLiveUI', :path => '../'
     pod 'BJLiveUI/static.source', :path => '../'
     
-    # pod 'BJLiveUI', '~> 1.1.0'
-    # pod 'BJLiveUI/static.source', '~> 1.1.0'
+    # pod 'BJLiveCore', '1.1.0'
+    # pod 'BJLiveUI', '1.1.0'
+    # pod 'LogStat', '0.7.3'
     
     # demo
     pod 'Masonry'

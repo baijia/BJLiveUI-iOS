@@ -229,6 +229,7 @@
 				DF97FD581E2CD28500A1BF8F /* BJAppearance.h */,
 				DF97FD591E2CD28500A1BF8F /* BJAppearance.m */,
 				DF97FD5A1E2CD28500A1BF8F /* controlers */,
+				DF97FD5E1E2CD28500A1BF8F /* views */,
 			);
 			path = utilities;
 			sourceTree = "<group>";
@@ -241,6 +242,13 @@
 				DF97FD5D1E2CD28500A1BF8F /* BJViewControllerImports.h */,
 			);
 			path = controlers;
+			sourceTree = "<group>";
+		};
+		DF97FD5E1E2CD28500A1BF8F /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 		E5E76E5E4E39FE9CD309EBDD /* Pods */ = {
@@ -412,16 +420,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BJLiveUI/Pods-BJLiveUI-resources.sh",
-				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_next.imageset/bjl_ic_ppt_next@2x.png",
-				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_next.imageset/bjl_ic_ppt_next@3x.png",
-				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_next.imageset/Contents.json",
-				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_prev.imageset/bjl_ic_ppt_prev@2x.png",
-				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_prev.imageset/bjl_ic_ppt_prev@3x.png",
-				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_prev.imageset/Contents.json",
-				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/Contents.json",
-				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets",
-				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_next.imageset",
-				"${PODS_ROOT}/BJLiveCore/frameworks/BJLiveCore.framework/Versions/A/Resources/BJLiveCore.xcassets/bjl_ic_ppt_prev.imageset",
 				"${PODS_ROOT}/../../images/BJLiveUI.xcassets",
 				"$PODS_CONFIGURATION_BUILD_DIR/QBImagePickerController/QBImagePicker.bundle",
 			);

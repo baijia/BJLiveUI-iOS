@@ -11,6 +11,5 @@
 
 #import <Masonry/Masonry.h>
 #import <ReactiveObjC/ReactiveObjC.h>
-#import <YYModel/YYModel.h>
 
 #import "BJAppearance.h"

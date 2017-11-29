@@ -147,6 +147,8 @@ static NSString * const BJLoginNameKey = @"BJLoginName";
 - (void)enterRoomWithJoinCode:(NSString *)joinCode userName:(NSString *)userName {
     [self storeCodeAndName];
     
+    BJLRoom.deployType = [BJAppConfig sharedInstance].deployType; // !!!: internal
+    
 //    BJLRoomViewController *roomViewController = [BJLRoomViewController
 //                                                 instanceWithID:@"170314xxxxxxxx"
 //                                                 apiSign:@"b8a5eddbxxxxxxxxxxxxxxxxxxxxe5a8"
