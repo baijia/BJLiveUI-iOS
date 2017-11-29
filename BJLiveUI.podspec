@@ -25,6 +25,10 @@ Pod::Spec.new do |s|
     s.default_subspecs = ['static']
 
     s.subspec 'static' do |ss|
+        ss.preserve_paths       = 'frameworks/BJLiveUI.framework'
+        ss.source_files         = 'frameworks/BJLiveUI.framework/Versions/A/Headers/**/*.h'
+        ss.public_header_files  = 'frameworks/BJLiveUI.framework/Versions/A/Headers/**/*.h'
+        ss.resources            = 'frameworks/BJLiveUI.framework/Versions/A/Resources/**/*'
         ss.vendored_frameworks  = 'frameworks/BJLiveUI.framework'
         ss.dependency 'BJLiveUI/static.dependencies'
     end
