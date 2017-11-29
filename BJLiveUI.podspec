@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
     }
     s.xcconfig      = {
         'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES',
-        'ENABLE_BITCODE' => 'NO',
+        # 'ENABLE_BITCODE' => 'NO',
         'GCC_PREPROCESSOR_DEFINITIONS' => '$(inherited) PODSPEC_NAME=#{s.name} PODSPEC_VERSION=#{s.version}'
     }
 
